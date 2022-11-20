@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+}
+
+/*---------- Navigation ----------*/
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav img{
+    width: 150px;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding: 2% 3%;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0B44C0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*---------- Überschrift Titelseite ----------*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text-box h1{
+    font-size: 50px;
+    color: #fff;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---------- Button ----------*/
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #;
+    background: #0B44C0;
+    transition: 1s;
+}
+
+.button-blue{
+    display: inline-block;
+    text-decoration: none;
+    color: #0B44C0;
+    border: 1px solid #0B44C0;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-blue:hover{
+    border: 1px solid #fff;
+    background: #0B44C0;
+    transition: 1s;
+    color: #fff;
+}
+.button1 {
+    border-radius: 1px;
+    background-color: #0B44C0;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 34px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button2:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1.5s;
+    color: #0B44C0;
+}
+
+
+/*---------- Navigation ----------*/
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding: 2% 3%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9C9CCE;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*---------- Überschrift Titelseite ----------*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text-box h1{
+    font-size: 50px;
+    color: #fff;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---------- Button ----------*/
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #0B44C0;
+    background: #0B44C0;
+    transition: 1s;
+}
+
+.button-blue{
+    display: inline-block;
+    text-decoration: none;
+    color: #0B44C0;
+    border: 1px solid #0B44C0;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-blue:hover{
+    border: 1px solid #fff;
+    background: #0B44C0;
+    transition: 1s;
+    color: #fff;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/*---------- About Calendall & Feature 2 ----------*/
+
+.about .hline{
+    width: 120px;
+    height: 2px;
+    background-color: #0B44C0;
+    margin: 16px auto 0 auto;
+}
+
+.hline{
+    width: 120px;
+    height: 2px;
+    background-color: #0B44C0;
+    margin: 16px auto 0 0px;   
+}
+
+.about{
+    width: 100%;
+    padding: 50px 130px;
+    height: auto;
+    align-items: center;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+
+.container-1{
+    width: 100%;
+    padding: 50px 65px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+}
+
+.container-1 h2{
+    line-height: 35px;
+}
+
+
+.box-1{
+    width: 40%;
+    height: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    vertical-align: middle 
+}
+
+
+
+/*------------ Feature 1 & 3 --------------*/
+
+.container-2{
+    width: 100%;
+    padding: 50px 65px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+
+}
+
+.container-2 h2{
+    line-height: 35px;
+}
+
+.box-2{
+    width: 40%;
+    height: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    vertical-align: middle 
+}
+
+/*---------- Free Trail ----------*/
+
+.container-4{
+    background-color: #0B44C0;
+    width: 100%;
+    height: 270px;
+    padding: 50px 0;
+    text-align: center;
+ 
+}
+
+.container-4 h1{
+    color: #fff;
+}
+
+.container-4 p{
+    color: #fff;
+    line-height: 25px;
+}
+
+/*---------- Pricing ----------*/
+
+.container-3{
+    width: 100%;
+    padding: 50px 65px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+}
+
+.container-3 h2{
+    line-height: 35px;
+}
+
+.pricing-plan{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 15px;
+}
+
+.pricing-plan--highlighted{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.pricing-plan:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.pricing-plan-header{
+    padding: 25px;
+    background: #0B44C0;
+    color: #fff;
+}
+
+
+.pricing-plan__titel{
+    margin: 0;
+    text-align: center; 
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pricing-plan__summary {
+    margin: 0;
+    text-align: center; 
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.pricing-plan__description{
+    padding: 25px;
+}
+
+.pricing-plan__description h3{
+    font-size: 44px;
+    margin: 10px 0 20px;
+    font-weight: 500;
+}
+.pricing-plan__description h3 span{
+    font-size: 16px;
+}
+
+
+.pricing-plan__list{
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan__feature{
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.pricing-plan__feature:not(:last-child){
+    margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature::before{
+    content: "\2714";
+    color: #0B44C0;
+    left: 0;
+    position: absolute;
+}
+
+.pricing-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pricing-plan__description button
+{
+    width: 100%;
+    padding: 14px 0;
+    background: #0b44c0d2;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pricing-plan__description button:hover{
+    background-color: #0B44C0;
+    font-weight: 600;
+}
+
+
+
+/*---------- Footer ----------*/
+
+.footer{
+    margin-top: 250px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #F2F2F2;
+    color: #616161;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    margin-bottom: 10px;
+}
+
+.col-3 a{
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #616161;
+    color: #616161;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 30px ;
+}
+
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
