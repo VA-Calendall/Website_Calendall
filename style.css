@@ -6,33 +6,35 @@
 }
 
 .header{
+    min-height: 100vh;
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     position: relative;
 }
 
-/*---------- Navigation ----------*/
+/*---------- Background Video ----------*/
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
+/*---------- Navigation Bar ----------*/
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
-
 
 nav img{
-    width: 150px;
+    width: 100px;
 }
-
 
 .nav-links{
     flex: 1;
     text-align: right;
-    padding: 2% 3%;
-    
 }
 
 .nav-links ul li{
@@ -42,13 +44,11 @@ nav img{
     position: relative;
 }
 
-
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
-
 
 .nav-links ul li::after{
     content: '';
@@ -64,8 +64,7 @@ nav img{
     width: 100%;
 }
 
-
-/*---------- Überschrift Titelseite ----------*/
+/*---------- Headline Textbox ----------*/
 .text-box{
     width: 90%;
     color: #fff;
@@ -77,10 +76,17 @@ nav img{
 }
 
 .text-box h1{
-    font-size: 50px;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.text-box h2{
+    font-size: 25px;
     color: #fff;
     padding-bottom: 30px;
 }
+
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
@@ -89,42 +95,24 @@ nav img{
 
 /*---------- Button ----------*/
 
-.button{
+.button-blue-transparent{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
+    color:#fff;
+    border: 1px solid #0B44C0;
+    padding: 12px 30px;
     font-size: 13px;
-    background: transparent;
+    background: #0B44C0;
     position: relative;
     cursor: pointer;
 }
-.button:hover{
-    border: 1px solid #0B44C0;
-    background: #0B44C0;
-    transition: 1s;
-}
-
-.button-blue{
-    display: inline-block;
-    text-decoration: none;
-    color: #0B44C0;
-    border: 1px solid #0B44C0;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.button-blue:hover{
+.button-blue-transparent:hover{
     border: 1px solid #fff;
-    background: #0B44C0;
+    background: transparent;
     transition: 1s;
-    color: #fff;
 }
-.button1 {
+
+.button-blue-arrow {
     border-radius: 1px;
     background-color: #0B44C0;
     border: none;
@@ -136,14 +124,14 @@ nav img{
     cursor: pointer;
   }
   
-  .button1 span {
+  .button-blue-arrow span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  .button1 span:after {
+  .button-blue-arrow span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -152,16 +140,16 @@ nav img{
     transition: 0.5s;
   }
   
-  .button1:hover span {
+  .button-blue-arrow:hover span {
     padding-right: 25px;
   }
   
-  .button1:hover span:after {
+  .button-blue-arrow:hover span:after {
     opacity: 1;
     right: 0;
   }
 
-  .button2{
+  .button-blue-white{
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -172,142 +160,15 @@ nav img{
     position: relative;
     cursor: pointer;
 }
-.button2:hover{
+.button-blue-white:hover{
     border: 1px solid #fff;
     background: #fff;
     transition: 1.5s;
     color: #0B44C0;
 }
+  
 
-.button3{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: #0B44C0;
-    position: relative;
-    cursor: pointer;
-}
-.button3:hover{
-    border: 1px solid #fff;
-    color: #fff;
-    background: transparent;
-    transition: 0.3s;
-}
-
-
-
-/*---------- Navigation ----------*/
-
-nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav img{
-    width: 150px;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-    padding: 2% 3%;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #9C9CCE;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-
-
-/*---------- Überschrift Titelseite ----------*/
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: left;
-}
-
-.text-box h1{
-    font-size: 50px;
-    color: #fff;
-}
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
-}
-
-/*---------- Button ----------*/
-
-.button{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.button:hover{
-    border: 1px solid #0B44C0;
-    background: #0B44C0;
-    transition: 1s;
-}
-
-.button-blue{
-    display: inline-block;
-    text-decoration: none;
-    color: #0B44C0;
-    border: 1px solid #0B44C0;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.button-blue:hover{
-    border: 1px solid #fff;
-    background: #0B44C0;
-    transition: 1s;
-    color: #fff;
-}
-
-.background-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-
-/*---------- About Calendall & Feature 2 ----------*/
+/*---------- About ----------*/
 
 .about .hline{
     width: 120px;
@@ -332,7 +193,7 @@ nav img{
     text-align: center;
 }
 
-
+/*---------- Terminplannung & Statistik ----------*/
 
 .container-1{
     width: 100%;
@@ -358,62 +219,7 @@ nav img{
     vertical-align: middle 
 }
 
-/*---------- Feature Icons ----------*/
-
-.container-feature{
-    width: 100%;
-    padding: 50px 65px;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 25px;
-}
-
-.feature{
-    background-color: #F2F2F2;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.feature h3{
-    font-size: 13px;
-    text-align: center;
-}
-
-.feature p{
-    font-size: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.feature:hover{
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.feature .icon{
-    color: #0B44C0;
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 15px;
-}
-
-.grid{
-    display: grid;
-    gap: 44px;
-}
-
-.four-col{
-    grid-template-columns: repeat(4, 1fr);
-}
-
-
-
-
-
-
-/*------------ Feature 1 & 3 --------------*/
+/*------------ Kundenmanagement --------------*/
 
 .container-2{
     width: 100%;
@@ -439,13 +245,71 @@ nav img{
     vertical-align: middle 
 }
 
+/*---------- Features ----------*/
+
+.container-feature{
+    width: 100%;
+    padding: 0px 150px 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+}
+
+.feature{
+    
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature h3{
+    font-size: 13px;
+    text-align: center;
+}
+
+.feature p{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+.feature .icon{
+    color: #0B44C0;
+    text-align: center;
+    font-size: 100px;
+    padding-bottom: 15px;
+}
+
+.grid{
+    display: grid;
+    gap: 44px;
+}
+
+.four-col{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*---------- Google Icons ----------*/
+
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
 /*---------- Free Trail ----------*/
 
 .container-4{
     background-color: #0B44C0;
     width: 100%;
     height: 270px;
-    padding: 50px 0;
+    padding: 30px 0px 30px;
     text-align: center;
  
 }
@@ -519,14 +383,11 @@ nav img{
 }
 
 .pricing-plan__description h3{
-    font-size: 44px;
+    font-size: 30px;
     margin: 10px 0 20px;
     font-weight: 500;
+    text-align: center;
 }
-.pricing-plan__description h3 span{
-    font-size: 16px;
-}
-
 
 .pricing-plan__list{
     padding: 0;
@@ -575,7 +436,6 @@ nav img{
 
 .pricing-plan__description button:hover{
     background-color: #0B44C0;
-    font-weight: 600;
 }
 
 
@@ -648,3 +508,5 @@ form button{
     margin: 10px;
     cursor: pointer;
 }
+
+
