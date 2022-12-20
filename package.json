@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && cp CNAME dist/ && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "sass": "^1.57.0",
