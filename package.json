@@ -14,6 +14,8 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "swiper": "^8.4.5"
   }
 }
