@@ -8,11 +8,16 @@ html {
     }
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 #header {
@@ -28,7 +33,10 @@ html {
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    background-image: linear-gradient(
+        rgba(12, 3, 51, 0.3),
+        rgba(12, 3, 51, 0.3)
+    );
 }
 
 /*---------- Background Video ----------*/
@@ -45,13 +53,18 @@ html {
 }
 
 /*---------- Navigation Bar ----------*/
-nav {
-    position: fixed;
+.navigation {
     width: 100%;
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+    z-index: 100;
+    transition: all 0.5s;
+    nav {
+        width: 100%;
+        display: flex;
+        padding: 30px 0;
+        justify-content: space-between;
+        align-items: center;
+        transition: padding 0.3s;
+    }
 }
 
 // nav img{
@@ -67,30 +80,41 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    
 }
 
-.nav-links ul li a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
     padding: 8px 12px;
     position: relative;
     display: inline-block;
     /* font-size: 13px; */
+    &:after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #0b44c0;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
 }
 
-.nav-links ul li a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #0B44C0;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
+.scrolled {
+    .navigation {
+        background-color: white;
+        box-shadow: 0px 10px 10px 0px rgba(58, 63, 67, 0.12);
 
-.nav-links ul li a:hover::after {
-    width: 100%;
+        nav {
+            padding: 10px 0;
+        }
+    }
+    .nav-links a {
+        color: black;
+    }
 }
 
 /*---------- Headline Textbox ----------*/
@@ -123,10 +147,10 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #0B44C0;
+    border: 1px solid #0b44c0;
     padding: 12px 30px;
     /* font-size: 13px; */
-    background: #0B44C0;
+    background: #0b44c0;
     position: relative;
     cursor: pointer;
 }
@@ -139,9 +163,9 @@ nav {
 
 .button-blue-arrow {
     border-radius: 1px;
-    background-color: #0B44C0;
+    background-color: #0b44c0;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     padding: 12px 34px;
     width: 200px;
@@ -157,7 +181,7 @@ nav {
 }
 
 .button-blue-arrow span:after {
-    content: '\00bb';
+    content: "\00bb";
     position: absolute;
     opacity: 0;
     top: 0;
@@ -190,9 +214,8 @@ nav {
     border: 1px solid #fff;
     background: #fff;
     transition: 1.5s;
-    color: #0B44C0;
+    color: #0b44c0;
 }
-
 
 /*---------- About ----------*/
 
@@ -206,7 +229,7 @@ nav {
 .hline {
     width: 120px;
     height: 2px;
-    background-color: #0B44C0;
+    background-color: #0b44c0;
     margin: 5px auto 0 0px;
 }
 
@@ -238,7 +261,6 @@ nav {
     line-height: 35px;
 } */
 
-
 /* .box-1{
     width: 40%;
     height: 300px;
@@ -258,7 +280,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     line-height: 25px;
-
 }
 
 .container-2 h2 {
@@ -270,7 +291,7 @@ nav {
     height: 300px;
     margin: 20px;
     box-sizing: border-box;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 /*---------- Features ----------*/
@@ -286,7 +307,6 @@ nav {
 }
 
 .feature {
-
     padding: 20px;
     border-radius: 5px;
 }
@@ -303,9 +323,8 @@ nav {
     text-align: center;
 }
 
-
 .feature .icon {
-    color: #0B44C0;
+    color: #0b44c0;
     text-align: center;
     /* font-size: 100px; */
     padding-bottom: 15px;
@@ -323,18 +342,13 @@ nav {
 /*---------- Google Icons ----------*/
 
 .material-symbols-rounded {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 500,
-        'GRAD' 0,
-        'opsz' 48
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
 }
-
 
 /*---------- Free Trail ----------*/
 
 .bg-primary-color {
-    background-color: #0B44C0;
+    background-color: #0b44c0;
     color: #ffffff;
 }
 
@@ -383,17 +397,15 @@ nav {
     margin: 15px;
 }
 
-
 .pricing-plan:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .pricing-plan-header {
     padding: 25px;
-    background: #0B44C0;
+    background: #0b44c0;
     color: #fff;
 }
-
 
 .pricing-plan__titel {
     margin: 0;
@@ -439,7 +451,7 @@ nav {
 
 .pricing-plan__feature::before {
     content: "\2714";
-    color: #0B44C0;
+    color: #0b44c0;
     left: 0;
     position: absolute;
 }
@@ -458,46 +470,12 @@ nav {
 }
 
 .pricing-plan__description button:hover {
-    background-color: #0B44C0;
+    background-color: #0b44c0;
 }
-
 
 /*---------- Footer ----------*/
-
 .footer {
-    width: 100%;
-    padding: 100px 15%;
-    background: #F2F2F2;
-    color: #616161;
-    display: flex;
-}
-
-.footer div {
-    text-align: center;
-}
-
-.col-2 {
-    flex-grow: 2;
-}
-
-.footer div h3 {
-    font-weight: 300;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-.col-1 a {
-    display: block;
-    text-decoration: none;
-    color: #616161;
-    margin-bottom: 10px;
-}
-
-.col-3 a {
-    display: block;
-    text-decoration: none;
-    color: #616161;
-    margin-bottom: 10px;
+    background-color: #f2f2f2;
 }
 
 form input {
@@ -515,9 +493,7 @@ form button {
     background: transparent;
     border: 2px solid #616161;
     color: #616161;
-    border-radius: 30px;
     padding: 10px 30px;
-    /* font-size: 15px; */
     cursor: pointer;
 }
 

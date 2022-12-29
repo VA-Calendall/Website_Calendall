@@ -31,3 +31,16 @@ const testimonialsSwiper = new Swiper(".testimonial-swiper", {
     },
 });
 // SWIPER END
+
+// scroll START
+
+function scrollClassOnBody() {
+    const distanceScrolled = document.documentElement.scrollTop;
+    if (distanceScrolled > 0) {
+        document.body.classList.add("scrolled")
+    } else {
+        document.body.classList.remove("scrolled")
+    }
+} 
+
+window.addEventListener("scroll", scrollClassOnBody, true) 
