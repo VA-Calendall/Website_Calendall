@@ -1,7 +1,10 @@
 // BOOTSTRAP START
+import "./scss/custom-variables.scss";
 import "bootstrap/dist/css/bootstrap-grid.css";
 import "bootstrap/dist/css/bootstrap-utilities.css";
-import "./style.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./scss/style.scss";
 // BOOTSTRAP END
 
 // AOS (animate on scroll) START
