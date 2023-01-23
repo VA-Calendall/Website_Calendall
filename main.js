@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap-utilities.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./scss/style.scss";
+
+import "./cookieconsent.js";
 // BOOTSTRAP END
 
 // AOS (animate on scroll) START
