@@ -1,12 +1,12 @@
+import "./cookieconsent.js";
+
 // BOOTSTRAP START
 import "./scss/custom-variables.scss";
-import "bootstrap/dist/css/bootstrap-grid.css";
-import "bootstrap/dist/css/bootstrap-utilities.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./scss/style.scss";
+import "bootstrap/js/dist/collapse.js";
 
-import "./cookieconsent.js";
+
+
 // BOOTSTRAP END
 
 // AOS (animate on scroll) START
@@ -39,12 +39,17 @@ const testimonialsSwiper = new Swiper(".testimonial-swiper", {
 
 // scroll START
 
+const navbar = document.querySelector('.navbar')
+
 function scrollClassOnBody() {
     const distanceScrolled = document.documentElement.scrollTop;
     if (distanceScrolled > 0) {
         document.body.classList.add("scrolled")
+        navbar.classList.remove("navbar-dark")
+        
     } else {
         document.body.classList.remove("scrolled")
+        navbar.classList.add("navbar-dark")
     }
 } 
 

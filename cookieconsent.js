@@ -1,30 +1,42 @@
+import 'cmel_cookieconsent/src/style.scss';
+
 import { Consent } from 'cmel_cookieconsent/src/core/consent';
 import config from 'cmel_cookieconsent/src/testconfigs/basic.json';
 
+config.cookie.domain = "localhost"
+console.log(config.cookie.domain)
+
 window.consent = new Consent("cookieconsent", config);
 
-document.querySelector('#cookieconsent').innerHTML = `
-  <div>
-    <div id="cookieconsent" class="cookieconsent cookieconsent__position--right">
-        <div class="cookieconsent__container">
-            <div class="cookieconsent__header">
-                <h3>${config.general.headline}</h3>
-                <p>${config.general.description}</p>
-            </div>
-            <form id="cookieconsent__form">
-                <div class="cookieconsent__form__categories">
-                
-                </div>
-                <div class="cookieconsent__form__buttons">
-                    <button>
-                        Speichern
-                    </button>
-                </div>
-            </form>
-        </div>
+var cookieconsentElement = document.createElement("div")
+cookieconsentElement.classList.add("cookieconsent", "cookieconsent__position--right")
+cookieconsentElement.setAttribute("id", "cookieconsent")
+
+console.log(window.consent.acceptedCategories.length)
+
+if (window.consent.acceptedCategories.length > 0) {
+    cookieconsentElement.classList.add("cookieconsent__hide")
+}
+
+cookieconsentElement.innerHTML = `<div class="cookieconsent__container">
+<div class="cookieconsent__header">
+    <h3>${config.general.headline}</h3>
+    <p>${config.general.description}</p>
+</div>
+<form id="cookieconsent__form">
+    <div class="cookieconsent__form__categories">
+    
     </div>
-  </div>
-`
+    <div class="cookieconsent__form__buttons">
+        <button>
+            Speichern
+        </button>
+    </div>
+</form>
+</div>`
+
+
+document.querySelector('body').append(cookieconsentElement)
 
 
 const categories = config.possibleCookies.map(category => {
@@ -48,7 +60,7 @@ document.querySelector('.cookieconsent__form__categories').innerHTML = categorie
 
 
 
-const formElement = document.querySelector<HTMLFormElement>('#cookieconsent__form')
+const formElement = document.querySelector('#cookieconsent__form')
 formElement?.addEventListener("submit", function (e) {
     e.preventDefault();
     e.stopPropagation();
@@ -62,4 +74,6 @@ formElement?.addEventListener("submit", function (e) {
         }
 
     })
+
+    cookieconsentElement.classList.add("cookieconsent__hide")
 })

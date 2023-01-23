@@ -1,3 +1,4 @@
+@import "bootstrap/scss/bootstrap.scss";
 
 html {
     font-size: 1vw;
@@ -64,7 +65,7 @@ a {
     text-decoration: none;
 }
 
-* {
+p, h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -544,7 +545,7 @@ a {
     background-color: #f2f2f2;
 }
 
-form input {
+.footer form input {
     width: 400px;
     max-width: 100%;
     height: 45px;
@@ -555,7 +556,7 @@ form input {
     outline: none;
 }
 
-form button {
+.footer form button {
     background: transparent;
     border: 2px solid #616161;
     color: #616161;
@@ -571,4 +572,11 @@ form button {
     /* font-size: 22px; */
     margin: 10px;
     cursor: pointer;
+}
+
+.cookieconsent {
+    z-index: 100;
+    &.cookieconsent__hide {
+        display: none;
+    }
 }

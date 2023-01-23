@@ -16,7 +16,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
-    "cmel_cookieconsent": "^0.0.1",
+    "cmel_cookieconsent": "^0.0.5",
     "swiper": "^8.4.5"
   }
 }
