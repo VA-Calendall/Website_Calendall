@@ -6,7 +6,7 @@ import config from 'cmel_cookieconsent/src/testconfigs/basic.json';
 config.cookie.domain = "localhost"
 console.log(config.cookie.domain)
 
-window.consent = new Consent("cookieconsent", config);
+window.consent = new Consent(config);
 
 var cookieconsentElement = document.createElement("div")
 cookieconsentElement.classList.add("cookieconsent", "cookieconsent__position--right")
