@@ -32,28 +32,6 @@ html {
         url("/fonts/poppins/Poppins-Italic.ttf") format("ttf");
 }
 
-@font-face {
-    font-family: "Material Symbols Rounded";
-    font-style: normal;
-    src: url("/fonts/material-icons/MaterialSymbolsRounded.woff2")
-            format("woff2"),
-        url("/fonts/material-icons/MaterialSymbolsRounded.ttf") format("ttf");
-}
-
-.material-symbols-rounded {
-    font-family: "Material Symbols Rounded";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-}
-
 @media (max-width: 1080px) {
     html {
         font-size: 11px;
@@ -416,7 +394,7 @@ p, h1,h2,h3,h4,h5,h6 {
 
 /*---------- Google Icons ----------*/
 
-.material-symbols-rounded {
+.material-icons-round {
     font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
 }
 

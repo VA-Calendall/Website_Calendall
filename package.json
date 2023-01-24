@@ -17,6 +17,8 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "cmel_cookieconsent": "^0.0.6",
+    "material-icons": "^1.13.1",
+    "material-symbols": "^0.4.2",
     "swiper": "^8.4.5"
   }
 }

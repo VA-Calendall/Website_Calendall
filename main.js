@@ -1,5 +1,8 @@
 import "./cookieconsent.js";
 
+import 'material-icons/iconfont/round.css';
+
+
 // BOOTSTRAP START
 import "./scss/custom-variables.scss";
 import "./scss/style.scss";
