@@ -5,62 +5,77 @@
         <meta name="description" content="Website of Vitual Addiction" />
         <meta http-equiv="refresh" content="120" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calendall</title>
+        <title>Calendall - Impressum</title>
 
-        <!----- Schrift ---->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-        />
-        <!----- Icons ---->
-        <script
-            src="https://kit.fontawesome.com/56804d1e96.js"
-            crossorigin="anonymous"
-        ></script>
-        <!----- Animated On Scroll ---->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!----- Icons Google---->
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
-      <script type="module" crossorigin src="/assets/main.8c0da61c.js"></script>
-      <link rel="stylesheet" href="/assets/main.8cbfcb4a.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                cookieListener()
+                document.body.addEventListener("ConsentAccepted", cookieListener)
+            })
+            function cookieListener() {
+                for (let i = 0; i < window.consent.acceptedCategories.length; i++) {
+                    const element = window.consent.acceptedCategories[i];
+                    console.log(element.id)
+                    
+                    if (element.id == "marketing") {
+                        enableGoogleAnalytics()
+                    }
+                }
+            }
+            function enableGoogleAnalytics(params) {
+                var googleAnalyticsScriptTag = document.createElement("script")
+                googleAnalyticsScriptTag.setAttribute("async", "")
+                googleAnalyticsScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-JYFVC4Q3TT"
+                document.body.append(googleAnalyticsScriptTag)
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-JYFVC4Q3TT');
+            }
+        
+        </script>
+
+      <script type="module" crossorigin src="/assets/main.3277cb27.js"></script>
+      <link rel="stylesheet" href="/assets/main.490779f3.css">
     </head>
 
     <body>
         <div class="navigation position-fixed">
             <div class="container">
-                <nav>
-                    <!----------------------------- Naviagtion  ----------------------------->
-                    <div class="nav-links">
-                        <ul>
-                            <li>
-                                <a class="fs-5" href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a class="fs-5" href="#preise">Preise</a>
-                            </li>
-                            <li>
-                                <a class="fs-5" href="support.html"
-                                    >Support</a
-                                >
-                            </li>
-                            <li>
-                                <a class="fs-5" href="contact.html"
-                                    >Kontakt</a
-                                >
-                            </li>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+      
+                      <!--<a class="navbar-brand" href="#">Logo</a>-->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse nav-links justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link fs-5" aria-current="page" href="/#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fs-5" href="/#feature">Vorteile</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fs-5" href="/#preise">Preise</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fs-5" href="/ueber-uns/">Über uns</a>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                            href="https://app.calendall.net/signup"
+                            class="button-blue-transparent fs-5 rounded"
+                            >Anmelden</a
+                        >
+                          </li>
                         </ul>
-                    </div>
-                    <a
-                        href="register.html"
-                        class="button-blue-transparent fs-5 rounded"
-                        >Anmelden</a
-                    >
-                </nav>
+                      </div>
+                  </nav>
             </div>
         </div>
         <div class="container-fluid">
@@ -532,15 +547,14 @@
                 <div class="row">
                     <div class="col-lg-3 d-flex flex-column">
                         <h3>Unternehmen</h3>
-                        <a href="#">Über uns</a>
-                        <a href="#">Kontakt</a>
-                        <a href="#">Impressum</a>
-                        <a href="#">Support</a>
+                        <a href="/ueber-uns/">Über uns</a>
+                        <a href="/impressum/">Impressum</a>
+                        <a href="mailto:info@calendall.net">Kontakt</a>
                     </div>
 
                     <div class="col-lg-6">
                         <h3>Newsletter</h3>
-                        <form>
+                        <form id="newletter-form">
                             <input
                                 type="email"
                                 placeholder="Deine E-Mail Adresse"
@@ -555,18 +569,20 @@
                         <h3>Service</h3>
                         <a href="#">Zahlung</a>
                         <a href="#">Nutzungsbedinnungen</a>
-                        <a href="#">Datenschutzerklärung</a>
+                        <a href="/datenschutz/">Datenschutzerklärung</a>
+                        <a href="#" onclick="document.getElementById('cookieconsent').classList.remove('cookieconsent__hide')">Cookie Consent abrufen</a>
 
                         <div class="social-icons">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
+                            <a href="https://www.facebook.com/calendall_official/"><i class="fa-brands fa-facebook"></i>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/calendall_official/"></a><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/calendall_official"></a><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+
 
         <!----------------------------- Animated on Scroll  ----------------------------->
 

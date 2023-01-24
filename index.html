@@ -6,8 +6,41 @@
         <meta http-equiv="refresh" content="120" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calendall</title>
-      <script type="module" crossorigin src="/assets/main.8c0da61c.js"></script>
-      <link rel="stylesheet" href="/assets/main.8cbfcb4a.css">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                cookieListener()
+                document.body.addEventListener("ConsentAccepted", cookieListener)
+            })
+            function cookieListener() {
+                for (let i = 0; i < window.consent.acceptedCategories.length; i++) {
+                    const element = window.consent.acceptedCategories[i];
+                    console.log(element.id)
+                    
+                    if (element.id == "marketing") {
+                        enableGoogleAnalytics()
+                    }
+                }
+            }
+            function enableGoogleAnalytics(params) {
+                var googleAnalyticsScriptTag = document.createElement("script")
+                googleAnalyticsScriptTag.setAttribute("async", "")
+                googleAnalyticsScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-JYFVC4Q3TT"
+                document.body.append(googleAnalyticsScriptTag)
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-JYFVC4Q3TT');
+            }
+        
+        </script>
+
+      <script type="module" crossorigin src="/assets/main.3277cb27.js"></script>
+      <link rel="stylesheet" href="/assets/main.490779f3.css">
     </head>
 
     <body>
@@ -22,10 +55,7 @@
                       <div class="collapse navbar-collapse nav-links justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                           <li class="nav-item">
-                            <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5" href="/#about">Features</a>
+                            <a class="nav-link fs-5" aria-current="page" href="/#">Home</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link fs-5" href="/#feature">Vorteile</a>
@@ -38,7 +68,7 @@
                           </li>
                           <li class="nav-item">
                             <a
-                            href="register.html"
+                            href="https://app.calendall.net/signup"
                             class="button-blue-transparent fs-5 rounded"
                             >Anmelden</a
                         >
@@ -80,7 +110,7 @@
                             und Kundenmanagement Tool, welches das Arbeiten
                             vereinfacht, digitalisiert und automatisiert.
                         </p>
-                        <a href="#" class="button-blue-arrow fs-5 rounded"
+                        <a href="https://app.calendall.net/signup" target="_blank" class="button-blue-arrow fs-5 rounded"
                             ><span>Jetzt kostenlos testen</span></a
                         >
                     </div>
@@ -131,27 +161,14 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <video
-                        autoplay
-                        loop
-                        muted
-                        plays-inline
-                        class="mw-100"
-                    >
-                        <source
-                            src="/assets/webseiten-video.53335ded.mp4"
-                            width="100%"
-                            controls
-                            type="video/mp4"
-                        />
-                    </video>
+                    <img src="/assets/1-terminplanung.308887a2.gif" class="mw-100" />
                 </div>
             </section>
 
             <!----------------------------- Kundenmanagement ----------------------------->
             <section class="row mb-5 justify-content-center" data-aos="fade-up">
                 <div class="col-lg-6 col-12">
-                    <img src="/assets/Calendar2.53f08eba.png" class="mw-100" />
+                    <img src="/assets/2-kundenmanagement.da154ef8.gif" class="mw-100" />
                 </div>
                 <div class="col-lg-6 col-10">
                     <h2 class="fs-3">Kundenmanagement</h2>
@@ -189,7 +206,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <img src="/assets/Calendar2.53f08eba.png" class="mw-100" />
+                    <img src="/assets/3-statistik.6d99f858.png" class="mw-100" />
                 </div>
             </section>
 
@@ -197,7 +214,7 @@
 
             <section class="row mb-5 justify-content-center" data-aos="fade-up">
                 <div class="col-lg-6 col-12">
-                    <img src="/assets/flexibility.66822101.png" class="mw-100" />
+                    <img src="/assets/4-flexibility.66822101.png" class="mw-100" />
                 </div>
                 <div class="col-lg-6 col-10">
                     <h2 class="fs-3">Flexibilität</h2>
@@ -410,7 +427,7 @@
                                     11+ User 59,90€
                                 </li>
                             </ul>
-                            <button>Kaufen</button>
+                            <a href="https://app.calendall.net/signup" target="_blank">Kaufen</a>
                         </div>
                     </div>
                 </div>
@@ -436,7 +453,7 @@
                                     11+ User 59,90€
                                 </li>
                             </ul>
-                            <button>Kaufen</button>
+                            <a href="https://app.calendall.net/signup" target="_blank">Kaufen</a>
                         </div>
                     </div>
                 </div>
@@ -462,7 +479,7 @@
                                     11+ User 59,90€
                                 </li>
                             </ul>
-                            <button>Kaufen</button>
+                            <a href="https://app.calendall.net/signup" target="_blank">Kaufen</a>
                         </div>
                     </div>
                 </div>
@@ -530,14 +547,14 @@
                 <div class="row">
                     <div class="col-lg-3 d-flex flex-column">
                         <h3>Unternehmen</h3>
-                        <a href="#">Über uns</a>
-                        <a href="#">Impressum</a>
-                        <a href="#">Kontakt</a>
+                        <a href="/ueber-uns/">Über uns</a>
+                        <a href="/impressum/">Impressum</a>
+                        <a href="mailto:info@calendall.net">Kontakt</a>
                     </div>
 
                     <div class="col-lg-6">
                         <h3>Newsletter</h3>
-                        <form>
+                        <form id="newletter-form">
                             <input
                                 type="email"
                                 placeholder="Deine E-Mail Adresse"
@@ -552,7 +569,7 @@
                         <h3>Service</h3>
                         <a href="#">Zahlung</a>
                         <a href="#">Nutzungsbedinnungen</a>
-                        <a href="#">Datenschutzerklärung</a>
+                        <a href="/datenschutz/">Datenschutzerklärung</a>
                         <a href="#" onclick="document.getElementById('cookieconsent').classList.remove('cookieconsent__hide')">Cookie Consent abrufen</a>
 
                         <div class="social-icons">
