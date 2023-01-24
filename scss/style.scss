@@ -66,7 +66,7 @@ a {
 }
 
 p, h1,h2,h3,h4,h5,h6 {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -523,7 +523,7 @@ p, h1,h2,h3,h4,h5,h6 {
     position: absolute;
 }
 
-.pricing-plan__description button {
+.pricing-plan__description a {
     width: 100%;
     padding: 14px 0;
     background: var(--primary-color);
@@ -534,9 +534,10 @@ p, h1,h2,h3,h4,h5,h6 {
     margin-top: 30px;
     cursor: pointer;
     transition: 0.5s;
+    display: inline-block;
 }
 
-.pricing-plan__description button:hover {
+.pricing-plan__description a:hover {
     background-color: var(--primary-color);
 }
 
