@@ -122,6 +122,10 @@ p, h1,h2,h3,h4,h5,h6 {
         color: white;
     }
 }
+.navbar-brand img {
+    max-height: 150px;
+    transition: 0.5s;
+}
 
 // nav img{
 //     /* width: 100px; */
@@ -173,6 +177,10 @@ p, h1,h2,h3,h4,h5,h6 {
     }
     .nav-links a {
         color: black;
+    }
+
+    .navbar-brand img {
+        max-height: 50px;
     }
 }
 
