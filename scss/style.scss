@@ -36,6 +36,10 @@ html {
     --bs-navbar-nav-link-padding-x: 12px;
 }
 
+a:hover {
+    color: var(--primary-hover-color);
+}
+
 
 @media (max-width: 1080px) {
     html {
@@ -99,10 +103,18 @@ p, h1,h2,h3,h4,h5,h6 {
         justify-content: space-between;
         align-items: center;
         transition: padding 0.3s;
+
+        //Burgermenu
+        .navbar-toggler {
+            border:0;
+            .burger-menu {
+
+            }
+        }
     }
 
     .nav-item .button-blue-transparent {
-        color: white;
+        color:var(--white-color);
     }
 }
 .navbar-brand img {
@@ -126,7 +138,7 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-links a {
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
     padding: 8px 12px;
     position: relative;
@@ -145,13 +157,13 @@ p, h1,h2,h3,h4,h5,h6 {
         width: 100%;
     }
     &:hover {
-        color:white;
+        color:var(--white-color);
     }
 }
 
 .scrolled {
     .navigation {
-        background-color: white;
+        background-color:var(--white-color);
         box-shadow: 0px 10px 10px 0px rgba(58, 63, 67, 0.12);
 
         nav {
@@ -169,26 +181,26 @@ p, h1,h2,h3,h4,h5,h6 {
 
 /*---------- Headline Textbox ----------*/
 .text-box {
-    color: #fff;
+    color: var(--white-color);
     text-align: left;
 }
 
 .text-box h1 {
     /* font-size: 35px; */
-    color: #fff;
+    color: var(--white-color);
     padding-bottom: 15px;
 }
 
 .text-box h2 {
     /* font-size: 25px; */
-    color: #fff;
+    color: var(--white-color);
     padding-bottom: 30px;
 }
 
 .text-box p {
     margin: 10px 0 40px;
     /* font-size: 14px; */
-    color: #fff;
+    color: var(--white-color);
 }
 
 /*---------- Button ----------*/
@@ -196,7 +208,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .button-blue-transparent {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     border: 1px solid var(--primary-color);
     padding: 12px 30px;
     /* font-size: 13px; */
@@ -207,7 +219,7 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .button-blue-transparent:hover {
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     background: transparent;
     &:after{
         content: none;
@@ -223,7 +235,7 @@ p, h1,h2,h3,h4,h5,h6 {
     border-radius: 1px;
     background-color: var(--primary-color);
     border: none;
-    color: #ffffff;
+    color: var(--white-color);
     text-align: center;
     padding: 12px 34px;
     width: 200px;
@@ -259,8 +271,8 @@ p, h1,h2,h3,h4,h5,h6 {
 .button-blue-white {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     padding: 12px 34px;
     /* font-size: 13px; */
     background: transparent;
@@ -269,8 +281,8 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .button-blue-white:hover {
-    border: 1px solid #fff;
-    background: #fff;
+    border: 1px solid var(--white-color);
+    background: var(--white-color);
     transition: 0.5s;
     color: var(--primary-color);
 }
@@ -285,16 +297,16 @@ p, h1,h2,h3,h4,h5,h6 {
 } */
 
 .hline {
-    width: 120px;
-    height: 2px;
-    background-color: var(--primary-color);
+    width: 6.25rem;
+    height: 2.5px;
+    background-color: var(--primary-hover-color);
     margin: 5px auto 0 0px;
 }
 
 .hline-white {
     width: 120px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     margin: 5px auto 0 0px;
 }
 
@@ -407,7 +419,7 @@ p, h1,h2,h3,h4,h5,h6 {
 
 .bg-primary-color {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 /* .container-4{
@@ -420,11 +432,11 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .container-4 h1{
-    color: #fff;
+    color: var(--white-color);
 }
 
 .container-4 p{
-    color: #fff;
+    color: var(--white-color);
     line-height: 25px;
 } */
 
@@ -452,7 +464,7 @@ p, h1,h2,h3,h4,h5,h6 {
     font-family: sans-serif;
     line-height: 1.5;
     color: #555555;
-    margin: 15px;
+    // margin: 15px;
 }
 
 .pricing-plan:hover {
@@ -462,7 +474,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .pricing-plan-header {
     padding: 25px;
     background: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .pricing-plan__titel {
@@ -518,14 +530,16 @@ p, h1,h2,h3,h4,h5,h6 {
     width: 100%;
     padding: 14px 0;
     background: var(--primary-color);
-    color: #fff;
-    /* font-size: 15px; */
-    border: 1px solid #fff;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
     border-radius: 6px;
     margin-top: 30px;
     cursor: pointer;
-    transition: 0.5s;
     display: inline-block;
+    transition: all 0.5s;
+    &:hover {
+        color: var(--primary-hover-color);
+    }
 }
 
 .pricing-plan__description a:hover {
@@ -543,8 +557,8 @@ p, h1,h2,h3,h4,h5,h6 {
     height: 45px;
     border-radius: 4px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     outline: none;
 }
 
@@ -561,7 +575,7 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .social-icons i {
-    /* font-size: 22px; */
+    font-size: 20px;
     margin: 10px;
     cursor: pointer;
 }
@@ -570,5 +584,47 @@ p, h1,h2,h3,h4,h5,h6 {
     z-index: 100;
     &.cookieconsent__hide {
         display: none;
+    }
+}
+
+
+//SWIPER
+
+.testimonial-swiper  {
+    .testimonial {
+        border-radius: 20px;
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            position: relative;
+            .fa {
+                position:absolute;
+                font-size:5rem;
+                top:50%;
+                transform:translateY(-50%);
+                color: var(--primary-color);
+                &.fa-angle-double-left {
+                    right:15px;
+                }
+                &.fa-angle-double-right {
+                    left:15px;
+                }
+            }
+        }
+    }
+    &.swiper-horizontal {
+        .swiper-pagination {
+            bottom:0;
+            .swiper-pagination-bullet {
+                height:10px;
+                width:10px;
+                background: var(--primary-hover-color);
+                opacity: .8;
+                &.swiper-pagination-bullet-active {
+                    background: var(--primary-color);
+                }
+            }
+        }
     }
 }
