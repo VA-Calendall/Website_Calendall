@@ -117,9 +117,13 @@ p, h1,h2,h3,h4,h5,h6 {
         color:var(--white-color);
     }
 }
-.navbar-brand img {
+.navbar-brand svg {
+    width: auto;
     max-height: 150px;
     transition: 0.5s;
+    .text-on-right {
+        fill: #fff;
+    }
 }
 
 // nav img{
@@ -174,8 +178,11 @@ p, h1,h2,h3,h4,h5,h6 {
         color: black;
     }
 
-    .navbar-brand img {
+    .navbar-brand svg {
         max-height: 50px;
+        .text-on-right {
+            fill: #000;
+        }
     }
 }
 
