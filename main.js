@@ -1,6 +1,5 @@
 import "./cookieconsent.js";
 
-import 'material-icons/iconfont/round.css';
 import "font-awesome/css/font-awesome.css"
 
 

@@ -18,8 +18,6 @@
     "bootstrap": "^5.2.3",
     "cmel_cookieconsent": "^0.0.6",
     "font-awesome": "^4.7.0",
-    "material-icons": "^1.13.1",
-    "material-symbols": "^0.4.2",
     "swiper": "^8.4.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
