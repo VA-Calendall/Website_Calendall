@@ -147,12 +147,12 @@ p, h1,h2,h3,h4,h5,h6 {
 //     margin-right: 10px;
 // }
 
-.nav-links ul li {
+.nav-item {
     list-style: none;
     display: inline-block;
 }
 
-.nav-links a {
+.nav-link {
     text-decoration: none;
     padding: 8px 12px;
     position: relative;
@@ -181,7 +181,7 @@ p, h1,h2,h3,h4,h5,h6 {
             padding: 10px 0;
         }
     }
-    .nav-links a {
+    .nav-link {
         color: black;
     }
 
@@ -195,6 +195,23 @@ p, h1,h2,h3,h4,h5,h6 {
         .text-on-right {
             fill: #000;
         }
+    }
+}
+
+//BUTTON
+
+.primary-button-style {
+    padding: 14px 30px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.5s, color 0.5s;
+    &:hover {
+        background: var(--primary-hover-color);
+        color: var(--primary-color);
     }
 }
 
@@ -250,42 +267,42 @@ p, h1,h2,h3,h4,h5,h6 {
     color: #000;
 }
 
-.button-blue-arrow {
-    border-radius: 1px;
-    background-color: var(--primary-color);
-    border: none;
-    color: var(--white-color);
-    text-align: center;
-    padding: 12px 34px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
+// .button-blue-arrow {
+//     border-radius: 1px;
+//     background-color: var(--primary-color);
+//     border: none;
+//     color: var(--white-color);
+//     text-align: center;
+//     padding: 12px 34px;
+//     width: 200px;
+//     transition: all 0.5s;
+//     cursor: pointer;
+// }
 
-.button-blue-arrow span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
+// .button-blue-arrow span {
+//     cursor: pointer;
+//     display: inline-block;
+//     position: relative;
+//     transition: 0.5s;
+// }
 
-.button-blue-arrow span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
+// .button-blue-arrow span:after {
+//     content: "\00bb";
+//     position: absolute;
+//     opacity: 0;
+//     top: 0;
+//     right: -20px;
+//     transition: 0.5s;
+// }
 
-.button-blue-arrow:hover span {
-    padding-right: 25px;
-}
+// .button-blue-arrow:hover span {
+//     padding-right: 25px;
+// }
 
-.button-blue-arrow:hover span:after {
-    opacity: 1;
-    right: 0;
-}
+// .button-blue-arrow:hover span:after {
+//     opacity: 1;
+//     right: 0;
+// }
 
 .button-blue-white {
     display: inline-block;
@@ -549,25 +566,26 @@ p, h1,h2,h3,h4,h5,h6 {
     position: absolute;
 }
 
-.pricing-plan__description a {
-    width: 100%;
-    padding: 14px 0;
-    background: var(--primary-color);
-    color: var(--white-color);
-    border: 1px solid var(--white-color);
-    border-radius: 6px;
-    margin-top: 30px;
-    cursor: pointer;
-    display: inline-block;
-    transition: all 0.5s;
-    &:hover {
-        color: var(--primary-hover-color);
-    }
-}
+// .pricing-plan__description a {
+//     width: 100%;
+//     padding: 14px 0;
+//     background: var(--primary-color);
+//     color: var(--white-color);
+//     border: 1px solid var(--white-color);
+//     border-radius: 6px;
+//     margin-top: 30px;
+//     cursor: pointer;
+//     display: inline-block;
+//     transition: all 0.5s;
+//     &:hover {
+//         background: var(--primary-hover-color);
+//         color: var(--primary-color);
+//     }
+// }
 
-.pricing-plan__description a:hover {
-    background-color: var(--primary-color);
-}
+// .pricing-plan__description a:hover {
+//     background-color: var(--primary-color);
+// }
 
 /*---------- Footer ----------*/
 .footer {
@@ -586,19 +604,6 @@ p, h1,h2,h3,h4,h5,h6 {
     padding: 0 15px;
 }
 
-.footer form button {
-    padding: 14px 30px;
-    background: var(--primary-color);
-    color: var(--white-color);
-    border: 1px solid var(--white-color);
-    border-radius: 6px;
-    cursor: pointer;
-    display: inline-block;
-    transition: all 0.5s;
-    &:hover {
-        color: var(--primary-hover-color);
-    }
-}
 
 .social-icons {
     margin-top: 30px;
