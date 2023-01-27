@@ -1,124 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Website of Vitual Addiction" />
-        <meta http-equiv="refresh" content="120" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calendall - Datenschutz</title>
+<html lang="de">
+<head>
+    <title>Calendall</title>
+    <meta name="description" content="Website of Vitual Addiction" />
 
+    <load src="/parts/head.html" />
 
-        <!-- Google tag (gtag.js) -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                cookieListener()
-                document.body.addEventListener("ConsentAccepted", cookieListener)
-            })
-            function cookieListener() {
-                for (let i = 0; i < window.consent.acceptedCategories.length; i++) {
-                    const element = window.consent.acceptedCategories[i];
-                    console.log(element.id)
-                    
-                    if (element.id == "marketing") {
-                        enableGoogleAnalytics()
-                    }
-                }
-            }
-            function enableGoogleAnalytics(params) {
-                var googleAnalyticsScriptTag = document.createElement("script")
-                googleAnalyticsScriptTag.setAttribute("async", "")
-                googleAnalyticsScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-JYFVC4Q3TT"
-                document.body.append(googleAnalyticsScriptTag)
+</head>
 
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+<body>
+    <load src="/parts/navigation.html" />
 
-                gtag('config', 'G-JYFVC4Q3TT');
-            }
-        
-        </script>
+    <div class="container-fluid empty-header"></div>
+    
 
-    </head>
-
-    <body>
-        <div class="navigation position-fixed">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-      
-                      <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" />
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse nav-links justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link fs-5" aria-current="page" href="/#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5" href="/#feature">Vorteile</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5" href="/#preise">Preise</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5" href="/ueber-uns/">Über uns</a>
-                          </li>
-                          <li class="nav-item">
-                            <a
-                            href="https://app.calendall.net/signup"
-                            class="button-blue-transparent fs-5 rounded ms-3"
-                            >Anmelden</a
-                        >
-                          </li>
-                        </ul>
-                      </div>
-                  </nav>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <section id="header" class="row">
-                <div class="col-12">
-                    <div class="header-overlay"></div>
-                    <!----------------------------- Background Video ----------------------------->
-
-                    <video
-                        autoplay
-                        loop
-                        muted
-                        plays-inline
-                        class="background-video"
-                    >
-                        <source
-                            src="/images/background.mp4"
-                            width="100%"
-                            controls
-                            type="video/mp4"
-                        />
-                    </video>
-                </div>
-                <div class="offset-2 col-8">
-                    <div class="text-box">
-                        <h1 class="fs-1">
-                            Verwenden Sie immernoch einen altmodischen
-                            Terminkalender? Zeit für ein Upgrade!
-                        </h1>
-                        <p class="fs-5">
-                            Effizient, Simple, Calendall. Unser Kalenderprogramm
-                            bietet Ihrem Unternehmen ein ausgeklügeltes Termin-
-                            und Kundenmanagement Tool, welches das Arbeiten
-                            vereinfacht, digitalisiert und automatisiert.
-                        </p>
-                        <a href="#" class="button-blue-arrow fs-5 rounded"
-                            ><span>Jetzt kostenlos testen</span></a
-                        >
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container">
+        <div class="container my-5">
             <!----------------------------- About Calendall ----------------------------->
             <h4>Datenschutzerklärung</h4>
 
@@ -4218,47 +4114,7 @@
             </p>
         </div>
 
-        <!-----------------------------Footer ----------------------------->
-        <footer class="footer py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 d-flex flex-column">
-                        <h3>Unternehmen</h3>
-                        <a href="/ueber-uns/">Über uns</a>
-                        <a href="/impressum/">Impressum</a>
-                        <a href="mailto:info@calendall.net">Kontakt</a>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <h3>Newsletter</h3>
-                        <form id="newletter-form">
-                            <input
-                                type="email"
-                                placeholder="Deine E-Mail Adresse"
-                                required
-                                class="rounded"
-                            /><br />
-                            <button type="submit" class="rounded">Jetzt anmelden</button>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-3 d-flex flex-column">
-                        <h3>Service</h3>
-                        <a href="#">Zahlung</a>
-                        <a href="#">Nutzungsbedinnungen</a>
-                        <a href="/datenschutz/">Datenschutzerklärung</a>
-                        <a href="#" onclick="document.getElementById('cookieconsent').classList.remove('cookieconsent__hide')">Cookie Consent abrufen</a>
-
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/calendall_official/"><i class="fa-brands fa-facebook"></i>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/calendall_official/"></a><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/calendall_official"></a><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <load src="/parts/footer.html" />
 
 
         <!----------------------------- Animated on Scroll  ----------------------------->

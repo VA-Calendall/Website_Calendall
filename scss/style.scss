@@ -34,6 +34,8 @@ html {
 
 .navbar {
     --bs-navbar-nav-link-padding-x: 12px;
+    --bs-navbar-color: #000;
+    --bs-navbar-hover-color: #000;
 }
 
 a:hover {
@@ -76,6 +78,10 @@ p, h1,h2,h3,h4,h5,h6 {
         rgba(12, 3, 51, 0.3),
         rgba(12, 3, 51, 0.3)
     );
+}
+
+.empty-header {
+    height: 210px;
 }
 
 /*---------- Background Video ----------*/
@@ -121,6 +127,11 @@ p, h1,h2,h3,h4,h5,h6 {
     width: auto;
     max-height: 150px;
     transition: 0.5s;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #fff;
     .text-on-right {
         fill: #fff;
     }
@@ -142,7 +153,6 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-links a {
-    color: var(--white-color);
     text-decoration: none;
     padding: 8px 12px;
     position: relative;
@@ -159,9 +169,6 @@ p, h1,h2,h3,h4,h5,h6 {
     }
     &:hover::after {
         width: 100%;
-    }
-    &:hover {
-        color:var(--white-color);
     }
 }
 
@@ -180,6 +187,11 @@ p, h1,h2,h3,h4,h5,h6 {
 
     .navbar-brand svg {
         max-height: 50px;
+        .text-on-right {
+            fill: #000;
+        }
+    }
+    .navbar-dark {
         .text-on-right {
             fill: #000;
         }

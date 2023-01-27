@@ -1,55 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Website of Vitual Addiction" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendall</title>
+    <meta name="description" content="Website of Vitual Addiction" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
-    <link rel="manifest" href="images/favicon//site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- Google tag (gtag.js) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            cookieListener()
-            document.body.addEventListener("ConsentAccepted", cookieListener)
-        })
-        function cookieListener() {
-            for (let i = 0; i < window.consent.acceptedCategories.length; i++) {
-                const element = window.consent.acceptedCategories[i];
-                console.log(element.id)
-
-                if (element.id == "marketing") {
-                    enableGoogleAnalytics()
-                }
-            }
-        }
-        function enableGoogleAnalytics(params) {
-            var googleAnalyticsScriptTag = document.createElement("script")
-            googleAnalyticsScriptTag.setAttribute("async", "")
-            googleAnalyticsScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-JYFVC4Q3TT"
-            document.body.append(googleAnalyticsScriptTag)
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'G-JYFVC4Q3TT');
-        }
-
-    </script>
+    <load src="/parts/head.html" />
 
 </head>
 
 <body>
-    <load src="/parts/navigation.html" />
+    <load src="/parts/navigation.html" navbaseclass="navbar-dark" />
     
     <div class="container-fluid">
         <section id="header" class="row">
