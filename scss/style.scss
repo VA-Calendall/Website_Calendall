@@ -412,12 +412,16 @@ p, h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
-.feature .icon {
-    color: var(--primary-color);
-    text-align: center;
-    /* font-size: 100px; */
-    padding-bottom: 15px;
+#feature {
+    .icon {
+        margin-bottom:15px;
+        i {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+        }
+    }
 }
+
 
 .grid {
     display: grid;
@@ -574,19 +578,26 @@ p, h1,h2,h3,h4,h5,h6 {
     width: 400px;
     max-width: 100%;
     height: 45px;
-    border-radius: 4px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
     outline: none;
+    text-align:left;
+    padding: 0 15px;
 }
 
 .footer form button {
-    background: transparent;
-    border: 2px solid #616161;
-    color: #616161;
-    padding: 10px 30px;
+    padding: 14px 30px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 6px;
     cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s;
+    &:hover {
+        color: var(--primary-hover-color);
+    }
 }
 
 .social-icons {
