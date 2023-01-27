@@ -44,16 +44,21 @@ const testimonialsSwiper = new Swiper(".testimonial-swiper", {
 // scroll START
 
 const navbar = document.querySelector('.navbar')
+const hasInitialDarkClass = navbar.classList.contains("navbar-dark")
 
 function scrollClassOnBody() {
     const distanceScrolled = document.documentElement.scrollTop;
     if (distanceScrolled > 0) {
         document.body.classList.add("scrolled")
-        navbar.classList.remove("navbar-dark")
+        if (hasInitialDarkClass) {
+            navbar.classList.remove("navbar-dark")
+        }
         
     } else {
         document.body.classList.remove("scrolled")
-        navbar.classList.add("navbar-dark")
+        if (hasInitialDarkClass) {
+            navbar.classList.add("navbar-dark")
+        }
     }
 } 
 
