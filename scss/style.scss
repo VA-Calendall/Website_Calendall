@@ -125,7 +125,7 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 .navbar-brand svg {
     width: auto;
-    max-height: 150px;
+    max-height: 50px;
     transition: 0.5s;
 }
 
@@ -186,7 +186,7 @@ p, h1,h2,h3,h4,h5,h6 {
     }
 
     .navbar-brand svg {
-        max-height: 50px;
+        max-height: 40px;
         .text-on-right {
             fill: #000;
         }
@@ -622,12 +622,17 @@ p, h1,h2,h3,h4,h5,h6 {
     }
 }
 
-
 //SWIPER
 
-.testimonial-swiper  {
+.testimonial-swiper {
     .testimonial {
         border-radius: 20px;
+        width:100%;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
         .testimonial-content {
             display: flex;
             flex-direction: column;
