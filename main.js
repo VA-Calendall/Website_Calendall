@@ -7,10 +7,9 @@ import "font-awesome/css/font-awesome.css"
 import "./scss/custom-variables.scss";
 import "./scss/style.scss";
 import "bootstrap/js/dist/collapse.js";
-
-
-
 // BOOTSTRAP END
+
+import "./price.js";
 
 // AOS (animate on scroll) START
 import Aos from "aos";

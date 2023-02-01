@@ -312,13 +312,11 @@
                 <h2 class="fs-3">Jetzt Upgraden</h2>
                 <div class="hline mx-auto"></div>
             </div>
-            <form id="employee-input">
+            
                 <div class="">
-                    <label for="employeeInputField" class="form-label">Mitarbeiteranzahl:</label>
-                    <input min="1" max="100" type="number" class="form-control" id="employeeInputField">
+                    <label for="employee-input" class="form-label">Mitarbeiteranzahl:</label>
+                    <input min="1" max="100" type="number" class="form-control" id="employee-input" name="employee-input" value="1" />
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="pricing-plan shadow">
                     <div class="pricing-plan-header rounded-top">
@@ -327,20 +325,12 @@
                     </div>
                     <div class="pricing-plan__description">
                         <h3>Monatlich</h3>
-                        <ul class="pricing-plan__list">
-                            <li class="pricing-plan__feature">
-                                1 User 19,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                2-4 User 39,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                5-10 User 49,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                11+ User 59,90€
-                            </li>
-                        </ul>
+                        <p>
+                            <span class="base-price-per-month">0.00</span>
+                            <span id="monthly-payment-price-per-month">0.00</span>
+                            <span id="monthly-payment-price-per-year">0.00</span>
+                        </p>
+                        
                         <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
@@ -354,20 +344,10 @@
                     </div>
                     <div class="pricing-plan__description">
                         <h3>Halbjährlich</h3>
-                        <ul class="pricing-plan__list">
-                            <li class="pricing-plan__feature">
-                                1 User 19,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                2-4 User 39,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                5-10 User 49,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                11+ User 59,90€
-                            </li>
-                        </ul>
+                        <p>
+                            <span id="half-yearly-payment-price-per-month">0.00</span>
+                            <span id="half-yearly-payment-price-per-year">0.00</span>
+                        </p>
                         <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
@@ -381,20 +361,10 @@
                     </div>
                     <div class="pricing-plan__description">
                         <h3>Jährlich</h3>
-                        <ul class="pricing-plan__list">
-                            <li class="pricing-plan__feature">
-                                1 User 19,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                2-4 User 39,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                5-10 User 49,98€
-                            </li>
-                            <li class="pricing-plan__feature">
-                                11+ User 59,90€
-                            </li>
-                        </ul>
+                        <p>
+                            <span id="yearly-payment-price-per-month">0.00</span>
+                            <span id="yearly-payment-price-per-year">0.00</span>
+                        </p>
                         <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
