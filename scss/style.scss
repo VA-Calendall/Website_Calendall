@@ -462,6 +462,10 @@ p, h1,h2,h3,h4,h5,h6 {
     color: var(--white-color);
 }
 
+.primary-color {
+    color: var(--primary-color);
+}
+
 /* .container-4{
     background-color: var(--primary-color);
     width: 100%;
@@ -497,10 +501,50 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 35px;
 } */
 
+.fd_employee-input-container {
+    input {
+        border: 2px solid var(--primary-color);
+    }
+}
+
+.badge_custom {
+    border-radius:50%;
+    height: 55px;
+    width: 55px;
+    font-size: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    right:-10px;
+    top:-10px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.badge_custom_popular {
+    background: var(--primary-hover-color);
+    color: var(--primary-color);
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.base-price-per-month {
+    &:after {
+        content:'';
+        background: red;
+        position: absolute;
+        left: 50%;
+        width: 80%;
+        top: 50%;
+        height: 2px;
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+}
+
 .pricing-plan {
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    //overflow: hidden;
     font-family: sans-serif;
     line-height: 1.5;
     color: #555555;
@@ -512,9 +556,10 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .pricing-plan-header {
-    padding: 25px;
+    padding: 35px;
     background: var(--primary-color);
     color: var(--white-color);
+    border-radius: 20px 20px 0 0;
 }
 
 .pricing-plan__titel {

@@ -312,60 +312,94 @@
                 <h2 class="fs-3">Jetzt Upgraden</h2>
                 <div class="hline mx-auto"></div>
             </div>
-            
-                <div class="">
-                    <label for="employee-input" class="form-label">Mitarbeiteranzahl:</label>
-                    <input min="1" max="100" type="number" class="form-control" id="employee-input" name="employee-input" value="1" />
-                </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="pricing-plan shadow">
-                    <div class="pricing-plan-header rounded-top">
-                        <h1 class="pricing-plan__titel">Starter</h1>
-                        <h2 class="pricing-plan__summary">0% Rabatt</h2>
+            <div class="fd_employee-input-container">
+                <label for="employee-input" class="form-label text-center fs-5">Mitarbeiteranzahl</label>
+                <input min="1" max="100" type="number" class="form-control w-50 mx-auto mt-2 mb-5" id="employee-input" name="employee-input" value="1" />
+            </div>
+            <div class="col-md-4 col-12 d-md-flex align-items-center mb-md-0 mb-5">
+                <div class="pricing-plan shadow position-relative">
+                    <span class="position-absolute badge bg-danger badge_custom">
+                        25%
+                    </span>
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan__titel">Monatliche Zahlung</h1>
                     </div>
                     <div class="pricing-plan__description">
-                        <h3>Monatlich</h3>
-                        <p>
-                            <span class="base-price-per-month">0.00</span>
-                            <span id="monthly-payment-price-per-month">0.00</span>
-                            <span id="monthly-payment-price-per-year">0.00</span>
-                        </p>
+                        <div>
+                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                                <span class="basic-wrap position-relative">
+                                    <span class="base-price-per-month fs-3">0.00</span>€
+                                </span>
+                                <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
+                            </p>
+                            <p class="fs-5 mb-4">monatliche Kosten</p>
+                            <span id="monthly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
+                            <p class="fs-5 mb-4">jährliche Kosten</p>
+                            <span>
+                                Monatliche Kosten, bei Monatliche Vorauszahlung
+                            </span>
+                        </div>
                         
-                        <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
+                        <a class="primary-button-style mt-5 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="pricing-plan shadow">
-                    <div class="pricing-plan-header rounded-top">
-                        <h1 class="pricing-plan__titel">Advanced</h1>
-                        <h2 class="pricing-plan__summary">-5% Rabatt</h2>
+            <div class="col-md-4 col-12 mb-md-0 mb-5">
+                <div class="pricing-plan shadow position-relative">
+                    <span class="position-absolute badge bg-danger badge_custom">
+                        35%
+                    </span>
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan__titel">Halbjährliche Zahlung</h1>
+                    </div>
+                    <div class="w-100 badge_custom_popular">
+                        Popular
                     </div>
                     <div class="pricing-plan__description">
-                        <h3>Halbjährlich</h3>
-                        <p>
-                            <span id="half-yearly-payment-price-per-month">0.00</span>
-                            <span id="half-yearly-payment-price-per-year">0.00</span>
-                        </p>
-                        <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
+                        <div>
+                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                                <span class="basic-wrap position-relative">
+                                    <span class="base-price-per-month fs-3">0.00</span>€
+                                </span>
+                                <span id="half-yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
+                            </p>
+                            <p class="fs-5 mb-4">monatliche Kosten</p>
+                            <span id="half-yearly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
+                            <p class="fs-5 mb-4">jährliche Kosten</p>
+                            <span>
+                                Monatliche Kosten, bei Monatliche Vorauszahlung
+                            </span>
+                        </div>
+                        <a class="primary-button-style mt-5 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="pricing-plan shadow">
-                    <div class="pricing-plan-header rounded-top">
-                        <h1 class="pricing-plan__titel">Premium</h1>
-                        <h2 class="pricing-plan__summary">-10% Rabatt</h2>
+            <div class="col-md-4 col-12 d-md-flex align-items-center">
+                <div class="pricing-plan shadow position-relative">
+                    <span class="position-absolute badge bg-danger badge_custom">
+                        50%
+                    </span>
+                    <div class="pricing-plan-header">
+                        <h1 class="pricing-plan__titel">Jährliche Zahlung</h1>
                     </div>
                     <div class="pricing-plan__description">
-                        <h3>Jährlich</h3>
-                        <p>
-                            <span id="yearly-payment-price-per-month">0.00</span>
-                            <span id="yearly-payment-price-per-year">0.00</span>
-                        </p>
-                        <a class="primary-button-style mt-4 w-100" href="https://app.calendall.net/signup"
+                        <div>
+                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                                <span class="basic-wrap position-relative">
+                                    <span class="base-price-per-month fs-3">0.00</span>€
+                                </span>
+                                <span id="yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
+                            </p>
+                            <p class="fs-5 mb-4">monatliche Kosten</p>
+                            <span id="yearly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
+                            <p class="fs-5 mb-4">jährliche Kosten</p>
+                            <span>
+                                Monatliche Kosten, bei Monatliche Vorauszahlung
+                            </span>
+                        </div>
+                        <a class="primary-button-style mt-5 w-100" href="https://app.calendall.net/signup"
                             target="_blank">Kaufen</a>
                     </div>
                 </div>
