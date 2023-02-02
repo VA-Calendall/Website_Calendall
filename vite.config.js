@@ -1,13 +1,15 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
-import injectHTML from 'vite-plugin-html-inject';
+import injectHTML from "vite-plugin-html-inject";
 
 export default defineConfig({
-    plugins: [injectHTML({
-        debug: {
-            logPath: true,
-        },
-    })],
+    plugins: [
+        injectHTML({
+            debug: {
+                logPath: true,
+            },
+        })
+    ],
     build: {
         rollupOptions: {
             input: {
@@ -15,6 +17,7 @@ export default defineConfig({
                 impressum: resolve(__dirname, "impressum/index.html"),
                 "ueber-uns": resolve(__dirname, "ueber-uns/index.html"),
                 datenschutz: resolve(__dirname, "datenschutz/index.html"),
+                kontakt: resolve(__dirname, "kontakt/index.html"),
             },
         },
     },
