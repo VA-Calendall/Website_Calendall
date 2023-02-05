@@ -650,16 +650,20 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 
+// .social-icons {
+//     margin-top: 30px;
+// }
+
 .social-icons {
-    margin-top: 30px;
+    a {
+        display: inline-block;
+    }
+    i {
+        font-size: 28px;
+        margin: 10px;
+        cursor: pointer;
+    }
 }
-
-.social-icons i {
-    font-size: 20px;
-    margin: 10px;
-    cursor: pointer;
-}
-
 .cookieconsent {
     z-index: 100;
     &.cookieconsent__hide {
