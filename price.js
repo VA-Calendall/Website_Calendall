@@ -50,7 +50,8 @@ const PriceList = {
 };
 
 const changePrice = function (element, price) {
-    element.innerHTML = price
+    let priceDecimals = price.toFixed(2);
+    element.innerHTML = priceDecimals
 }
 
 const handlePriceInput = function (employeeInput) {

@@ -504,13 +504,25 @@ p, h1,h2,h3,h4,h5,h6 {
 .fd_employee-input-container {
     display:flex;
     flex-direction: column;
+    label {
+        margin-bottom:0;
+    }
     input {
         border: 0;
+        @media (max-width: 575px) {
+            width:100%!important;
+        }
     }
     .range-wrap {
         position: relative;
         display: flex;
+        align-items: end;
+        justify-content: center;
         #employee_value {
+            font-size: 25px;
+            font-weight:bold;
+            margin-right: 7px;
+            color: var(--primary-color);
         }
     }
       
@@ -537,6 +549,9 @@ input[type=range]::-ms-thumb {
     right:-10px;
     top:-10px;
     box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+    @media (max-width: 575px) {
+        right:0;
+    }
 }
 
 .badge_custom_popular {
