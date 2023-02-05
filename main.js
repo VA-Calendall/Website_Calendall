@@ -25,39 +25,55 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// init Swiper:
-const testimonialsSwiper = new Swiper(".testimonial-swiper", {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination],
-    spaceBetween: 30,
-    slidesPerView: 1,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-// SWIPER END
-
-// scroll START
-
-const navbar = document.querySelector('.navbar')
-const hasInitialDarkClass = navbar.classList.contains("navbar-dark")
-
-function scrollClassOnBody() {
-    const distanceScrolled = document.documentElement.scrollTop;
-    if (distanceScrolled > 0) {
-        document.body.classList.add("scrolled")
-        if (hasInitialDarkClass) {
-            navbar.classList.remove("navbar-dark")
+document.addEventListener("DOMContentLoaded", function () {
+    // init Swiper:
+    const testimonialsSwiper = new Swiper(".testimonial-swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Pagination],
+        spaceBetween: 30,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    // SWIPER END
+    
+    // scroll START
+    
+    const navbar = document.querySelector('.navbar')
+    const hasInitialDarkClass = navbar.classList.contains("navbar-dark")
+    
+    function scrollClassOnBody() {
+        const distanceScrolled = document.documentElement.scrollTop;
+        if (distanceScrolled > 0) {
+            document.body.classList.add("scrolled")
+            if (hasInitialDarkClass) {
+                navbar.classList.remove("navbar-dark")
+            }
+            
+        } else {
+            document.body.classList.remove("scrolled")
+            if (hasInitialDarkClass) {
+                navbar.classList.add("navbar-dark")
+            }
         }
-        
-    } else {
-        document.body.classList.remove("scrolled")
-        if (hasInitialDarkClass) {
-            navbar.classList.add("navbar-dark")
-        }
+    } 
+    
+    window.addEventListener("scroll", scrollClassOnBody, true) 
+    
+    
+    
+    // Navigation mobile toggle
+
+    const toggleNavigationOpenClass = function (){
+        document.body.classList.toggle("navigation-open")
     }
-} 
+    
+    const navbarId = document.getElementById("navbarNavDropdown");
 
-window.addEventListener("scroll", scrollClassOnBody, true) 
+    navbarId.addEventListener("show.bs.collapse", toggleNavigationOpenClass)
+    navbarId.addEventListener("hide.bs.collapse", toggleNavigationOpenClass)
+
+})
