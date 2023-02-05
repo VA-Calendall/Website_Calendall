@@ -316,8 +316,11 @@
                 <div class="hline mx-auto"></div>
             </div>
             <div class="fd_employee-input-container">
-                <label for="employee-input" class="form-label text-center fs-5">Mitarbeiteranzahl</label>
-                <input min="1" max="100" type="number" class="form-control w-50 mx-auto mt-2 mb-5" id="employee-input" name="employee-input" value="1" />
+                <div class="range-wrap">
+                    <output id="employee_value"></output>
+                    <label for="employee-input" class="form-label text-center fs-5">Mitarbeiter</label>
+                </div>
+                <input min="1" max="11" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
             </div>
             <div class="col-md-4 col-12 d-md-flex align-items-center mb-md-0 mb-5">
                 <div class="pricing-plan shadow position-relative">
@@ -385,7 +388,7 @@
                         50%
                     </span>
                     <div class="pricing-plan-header">
-                        <h1 class="pricing-plan__titel">Jährliche Zahlung</h1>
+                        <h1 class="pricing-plan__titel">Jährliche<br>Zahlung</h1>
                     </div>
                     <div class="pricing-plan__description">
                         <div>

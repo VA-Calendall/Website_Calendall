@@ -95,3 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
     handlePriceInput(employeeInput)
     employeeInput.addEventListener("input", () => handlePriceInput(employeeInput))
 });
+
+
+//Value
+
+const value = document.querySelector("#employee_value")
+const input = document.querySelector("#employee-input")
+value.textContent = input.value
+input.addEventListener("input", (event) => {
+  value.textContent = event.target.value
+})
