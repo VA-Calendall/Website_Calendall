@@ -92,17 +92,19 @@ const handlePriceInput = function (employeeInput) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const employeeInput = document.querySelector('#employee-input')
+    const value = document.querySelector("#employee_value")
+    
+    if (value && employeeInput) {
+        handlePriceInput(employeeInput)
+        employeeInput.addEventListener("input", () => handlePriceInput(employeeInput))
 
-    handlePriceInput(employeeInput)
-    employeeInput.addEventListener("input", () => handlePriceInput(employeeInput))
+        value.textContent = input.value
+        input.addEventListener("input", (event) => {
+            value.textContent = event.target.value
+        })
+    }
 });
 
 
 //Value
 
-const value = document.querySelector("#employee_value")
-const input = document.querySelector("#employee-input")
-value.textContent = input.value
-input.addEventListener("input", (event) => {
-  value.textContent = event.target.value
-})

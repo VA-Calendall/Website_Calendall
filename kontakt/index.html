@@ -1,67 +1,205 @@
 <!DOCTYPE html>
 <html lang="de">
+    <head>
+        <title>Kontakt - Calendall</title>
 
-<head>
-    <title>Kontakt - Calendall</title>
+        <load src="/parts/head.html" />
+    </head>
 
-    <load src="/parts/head.html" />
+    <body>
+        <load src="/parts/navigation.html" />
 
-</head>
+        <div class="container-fluid empty-header"></div>
+        <div class="container my-5">
+            <section id="kontakt" class="row mb-5 pb-5 justify-content-center">
+                <div class="col-8 text-center mb-5">
+                    <h2 class="fs-3">Sie haben noch Fragen?</h2>
+                    <div class="hline mx-auto"></div>
+                </div>
+                <div class="col-12">
+                    <form id="contact-form" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label"
+                                >Vorname</label
+                            >
+                            <input
+                                id="first-name"
+                                name="first-name"
+                                type="text"
+                                class="form-control"
+                                value="Max"
+                                required
+                            />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label"
+                                >Nachname</label
+                            >
+                            <input
+                                id="last-name"
+                                name="last-name"
+                                type="text"
+                                class="form-control"
+                                value="Mustermann"
+                                required
+                            />
+                        </div>
 
-<body>
-    <load src="/parts/navigation.html" />
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label"
+                                >Email</label
+                            >
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                class="form-control"
+                                value="max.mustermann@web.at"
+                                required
+                            />
+                        </div>
 
-    <div class="container-fluid empty-header"></div>
-    <div class="container my-5">
-        <section id="kontakt" class="row mb-5 pb-5 justify-content-center">
-            <div class="col-8 text-center mb-5">
-                <h2 class="fs-3">Sie haben noch Fragen?</h2>
-                <div class="hline mx-auto"></div>
-            </div>
-            <div class="col-md-12">
-                <p>
-                    Wir bei CALENDALL schätzen Ihr Interesse an unserer Termin- und Kundemanagement Software. Bitte zögern Sie nicht, uns per Email oder Telefon zu kontaktieren, wenn Sie Fragen haben oder einen Termin vereinbaren möchten. Wir freuen uns darauf, von Ihnen zu hören.
-                </p>
-                <h5>Kontakt:</h5>
-                <p>
-                    
-                    E-Mail: <a
-                        href="mailto:info@virtual-addiction.net">office@virtual-addiction.net</a> <br>
-                    Tel: <a href="tel:+436641240966">+43 664 1240966</a><br>
-                </p>
-                <h5>
-                    Postanschrift:
-                </h5>
-                <p>
-                    Virtual Addiction OG <br>
-                    Hauptplatz 5 <br>
-                    6020 Innsbruck <br>
-                    Österreich <br>
-                    
-                </p>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label"
+                                >Telefonnummer</label
+                            >
+                            <input
+                                id="phonenumber"
+                                name="phonenumber"
+                                type="tel"
+                                class="form-control"
+                                value="0664 123456789"
+                                required
+                            />
+                        </div>
 
-                <h5>
-                    Unsere Geschäftszeiten:
-                </h5>
-                <p>
-                    Montag — Samstag: 8:00 Uhr bis 19:00 Uhr
-                </p>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label"
+                                >Adresse</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="adress"
+                                required
+                            />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="city" class="form-label"
+                                >Stadt</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="city"
+                                required
+                            />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label"
+                                >PLZ</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="zip"
+                                required
+                            />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="country" class="form-label"
+                                >Land</label
+                            >
+                            <select
+                                class="form-select"
+                                id="country"
+                                required
+                            >
+                                <option selected value="at">
+                                    Österreich
+                                </option>
+                                <option value="de">
+                                    Deutschland
+                                </option>
+                                <option value="ch">
+                                    Schweiz
+                                </option>
+                            </select>
+                        </div>
 
-                <h5>
-                    Jobs:
-                </h5>
-                <p>
-                    Du passt zu uns und möchtest Teil unseres Teams werden? Wir sind immer auf der Suche nach talentierten Kolleg:innen,
-                    die Teil unseres Teams werden möchten. Schreibe uns gerne eine Bewerbung per Mail unter: <a href="office@virtual-addiction.net">office@virtual-addiction.net</a>
-                </p>
-            </div>
-        </section>
-    </div>
-    <load src="/parts/footer.html" />
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="dsgvo"
+                                    required
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="dsgvo"
+                                >
+                                    Datenschutzbestimmungen akzeptieren
+                                </label>
+                                <div class="invalid-feedback">
+                                    Das akzeptieren der Datenschutzbestimmungen ist erforderlich.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="primary-button-style" type="submit">
+                                Absenden
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <p>
+                        Wir bei CALENDALL schätzen Ihr Interesse an unserer
+                        Termin- und Kundemanagement Software. Bitte zögern Sie
+                        nicht, uns per Email oder Telefon zu kontaktieren, wenn
+                        Sie Fragen haben oder einen Termin vereinbaren möchten.
+                        Wir freuen uns darauf, von Ihnen zu hören.
+                    </p>
+                    <h5>Kontakt:</h5>
+                    <p>
+                        E-Mail:
+                        <a href="mailto:info@virtual-addiction.net"
+                            >office@virtual-addiction.net</a
+                        >
+                        <br />
+                        Tel: <a href="tel:+436641240966">+43 664 1240966</a
+                        ><br />
+                    </p>
+                    <h5>Postanschrift:</h5>
+                    <p>
+                        Virtual Addiction OG <br />
+                        Hauptplatz 5 <br />
+                        6020 Innsbruck <br />
+                        Österreich <br />
+                    </p>
 
-    <!----------------------------- Animated on Scroll  ----------------------------->
+                    <h5>Unsere Geschäftszeiten:</h5>
+                    <p>Montag — Samstag: 8:00 Uhr bis 19:00 Uhr</p>
 
-    <script type="module" src="/main.js"></script>
-</body>
+                    <h5>Jobs:</h5>
+                    <p>
+                        Du passt zu uns und möchtest Teil unseres Teams werden?
+                        Wir sind immer auf der Suche nach talentierten
+                        Kolleg:innen, die Teil unseres Teams werden möchten.
+                        Schreibe uns gerne eine Bewerbung per Mail unter:
+                        <a href="office@virtual-addiction.net"
+                            >office@virtual-addiction.net</a
+                        >
+                    </p>
+                </div>
+            </section>
+        </div>
+        <load src="/parts/footer.html" />
 
+        <!----------------------------- Animated on Scroll  ----------------------------->
+
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>

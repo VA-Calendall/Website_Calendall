@@ -1,5 +1,3 @@
-import "./cookieconsent.js";
-
 import "font-awesome/css/font-awesome.css"
 
 
@@ -75,5 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navbarId.addEventListener("show.bs.collapse", toggleNavigationOpenClass)
     navbarId.addEventListener("hide.bs.collapse", toggleNavigationOpenClass)
+
+    // contact form submit
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm?.addEventListener("submit", (event) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        console.log(formData);
+
+
+    })
 
 })
