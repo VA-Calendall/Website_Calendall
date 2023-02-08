@@ -77,15 +77,15 @@ const handlePriceInput = function (employeeInput) {
     
     // monthly
     changePrice(document.getElementById("monthly-payment-price-per-month"), PriceList["month"][index])
-    changePrice(document.getElementById("monthly-payment-price-per-year"), PriceList["month"][index] * 12)
+    //changePrice(document.getElementById("monthly-payment-price-per-year"), PriceList["month"][index] * 12)
 
     // half year
     changePrice(document.getElementById("half-yearly-payment-price-per-month"), PriceList["half-year"][index])
-    changePrice(document.getElementById("half-yearly-payment-price-per-year"), PriceList["half-year"][index] * 12)
+    //changePrice(document.getElementById("half-yearly-payment-price-per-year"), PriceList["half-year"][index] * 12)
 
     // year
     changePrice(document.getElementById("yearly-payment-price-per-month"), PriceList["year"][index])
-    changePrice(document.getElementById("yearly-payment-price-per-year"), PriceList["year"][index] * 12)
+    //changePrice(document.getElementById("yearly-payment-price-per-year"), PriceList["year"][index] * 12)
     
 }
 
@@ -93,13 +93,13 @@ const handlePriceInput = function (employeeInput) {
 document.addEventListener("DOMContentLoaded", function () {
     const employeeInput = document.querySelector('#employee-input')
     const value = document.querySelector("#employee_value")
-    
+
     if (value && employeeInput) {
         handlePriceInput(employeeInput)
         employeeInput.addEventListener("input", () => handlePriceInput(employeeInput))
 
-        value.textContent = input.value
-        input.addEventListener("input", (event) => {
+        value.textContent = employeeInput.value
+        employeeInput.addEventListener("input", (event) => {
             value.textContent = event.target.value
         })
     }

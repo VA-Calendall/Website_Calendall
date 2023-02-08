@@ -308,12 +308,12 @@
             <div class="fd_employee-input-container mb-5">
                 <div class="range-wrap mb-2">
                     <output id="employee_value"></output>
-                    <label for="employee-input" class="form-label text-center fs-5">Mitarbeiter</label>
+                    <label for="employee-input" class="form-label text-center fs-5">Benutzer</label>
                 </div>
                 <input min="1" max="10" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
             </div>
             <div class="col-md-4 col-12 d-md-flex align-items-center mb-md-0 mb-5">
-                <div class="pricing-plan shadow position-relative">
+                <div class="pricing-plan shadow position-relative w-100">
                     <span class="position-absolute badge bg-danger badge_custom">
                         25%
                     </span>
@@ -322,17 +322,14 @@
                     </div>
                     <div class="pricing-plan__description">
                         <div>
-                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                            <p class="d-flex flex-row justify-content-center mb-4 fs-3">
                                 <span class="basic-wrap position-relative">
                                     <span class="base-price-per-month fs-3">0.00</span>€
                                 </span>
                                 <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                             </p>
-                            <p class="fs-5 mb-4">monatliche Kosten</p>
-                            <span id="monthly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
-                            <p class="fs-5 mb-4">jährliche Kosten</p>
                             <span>
-                                Monatliche Kosten, bei Monatliche Vorauszahlung
+                                Monatliche Kosten, bei Monatlicher Vorauszahlung
                             </span>
                         </div>
                         
@@ -342,7 +339,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12 mb-md-0 mb-5">
-                <div class="pricing-plan shadow position-relative">
+                <div class="pricing-plan shadow position-relative w-100">
                     <span class="position-absolute badge bg-danger badge_custom">
                         35%
                     </span>
@@ -354,17 +351,14 @@
                     </div>
                     <div class="pricing-plan__description">
                         <div>
-                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                            <p class="d-flex flex-row justify-content-center mb-4 fs-3">
                                 <span class="basic-wrap position-relative">
                                     <span class="base-price-per-month fs-3">0.00</span>€
                                 </span>
                                 <span id="half-yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                             </p>
-                            <p class="fs-5 mb-4">monatliche Kosten</p>
-                            <span id="half-yearly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
-                            <p class="fs-5 mb-4">jährliche Kosten</p>
                             <span>
-                                Monatliche Kosten, bei Monatliche Vorauszahlung
+                                Monatliche Kosten, bei Halbjährlicher Vorauszahlung
                             </span>
                         </div>
                         <a class="primary-button-style mt-5 w-100" href="https://app.calendall.net/signup"
@@ -373,7 +367,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12 d-md-flex align-items-center">
-                <div class="pricing-plan shadow position-relative">
+                <div class="pricing-plan shadow position-relative w-100">
                     <span class="position-absolute badge bg-danger badge_custom">
                         50%
                     </span>
@@ -382,15 +376,12 @@
                     </div>
                     <div class="pricing-plan__description">
                         <div>
-                            <p class="d-flex flex-row justify-content-center mb-1 fs-3">
+                            <p class="d-flex flex-row justify-content-center mb-4 fs-3">
                                 <span class="basic-wrap position-relative">
                                     <span class="base-price-per-month fs-3">0.00</span>€
                                 </span>
                                 <span id="yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                             </p>
-                            <p class="fs-5 mb-4">monatliche Kosten</p>
-                            <span id="yearly-payment-price-per-year" class="fs-3">0.00</span><span class="fs-3">€</span>
-                            <p class="fs-5 mb-4">jährliche Kosten</p>
                             <span>
                                 Monatliche Kosten, bei Monatliche Vorauszahlung
                             </span>
@@ -402,8 +393,8 @@
             </div>
         </section>
 
-        <!---------Testimonials--------->
-        <section id="referenzen" class="row mb-5 pb-5 justify-content-center">
+        <!---------Testimonials START--------->
+        <!-- <section id="referenzen" class="row mb-5 pb-5 justify-content-center">
             <div class="col-8 text-center">
                 <h2 class="fs-3">Was unsere Kunden sagen</h2>
                 <div class="hline mx-auto"></div>
@@ -411,7 +402,6 @@
             <div class="col-md-12">
                 <div class="swiper testimonial-swiper">
                     <div class="swiper-wrapper">
-                        <!-- Slide 1-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -433,7 +423,6 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- Slide 2-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -451,7 +440,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 3-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -470,7 +458,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 4-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -486,7 +473,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 5-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -506,7 +492,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 6-->
                         <div class="swiper-slide d-flex justify-content-center h-auto">
                             <div class="testimonial shadow my-5 mx-2 text-center">
                                 <div class="testimonial-content">
@@ -527,7 +512,8 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <!---------Testimonials END--------->
     </div>
 
     <load src="/parts/footer.html" />

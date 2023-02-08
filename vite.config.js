@@ -18,6 +18,7 @@ export default defineConfig({
                 "ueber-uns": resolve(__dirname, "ueber-uns/index.html"),
                 datenschutz: resolve(__dirname, "datenschutz/index.html"),
                 kontakt: resolve(__dirname, "kontakt/index.html"),
+                agb: resolve(__dirname, "agb/index.html"),
             },
         },
     },

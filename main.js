@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     } 
-    
+    scrollClassOnBody()
     window.addEventListener("scroll", scrollClassOnBody, true) 
     
     
@@ -78,11 +78,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contact-form");
 
     contactForm?.addEventListener("submit", (event) => {
-        e.preventDefault();
+        event.preventDefault();
 
-        const formData = new FormData(form);
+        const formData = new FormData(contactForm);
 
-        console.log(formData);
+        
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", yourUrl, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState != 4) return;
+        
+            if (this.status == 200) {
+                var data = JSON.parse(this.responseText);
+        
+                // we get the returned data
+                console.log("data received after post", data)
+            } else {
+                console.log("something went wrong")
+            }
+            
+        
+        };
+        
+        xhr.send(JSON.stringify({
+            value: value
+        }));
 
 
     })
