@@ -1,10 +1,9 @@
-import "font-awesome/css/font-awesome.css"
-
-
 // BOOTSTRAP START
 import "./scss/custom-variables.scss";
 import "./scss/style.scss";
 import "bootstrap/js/dist/collapse.js";
+import '@justinribeiro/lite-youtube';
+
 //import "bootstrap/js/dist/";
 // BOOTSTRAP END
 

@@ -15,6 +15,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
+    "@justinribeiro/lite-youtube": "^1.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "cmel_cookieconsent": "^0.0.7",
