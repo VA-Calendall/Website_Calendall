@@ -5,6 +5,7 @@ import "font-awesome/css/font-awesome.css"
 import "./scss/custom-variables.scss";
 import "./scss/style.scss";
 import "bootstrap/js/dist/collapse.js";
+//import "bootstrap/js/dist/";
 // BOOTSTRAP END
 
 import "./price.js";
@@ -74,37 +75,63 @@ document.addEventListener("DOMContentLoaded", function () {
     navbarId.addEventListener("show.bs.collapse", toggleNavigationOpenClass)
     navbarId.addEventListener("hide.bs.collapse", toggleNavigationOpenClass)
 
+
+
+
     // contact form submit
     const contactForm = document.getElementById("contact-form");
+    let contactSend = false;
 
     contactForm?.addEventListener("submit", (event) => {
-        event.preventDefault();
+        event.preventDefault()
+        event.stopPropagation()
+        contactForm.classList.add('was-validated')
+        if (!contactForm.checkValidity() || contactSend) {
+            return;
+        }
+
 
         const formData = new FormData(contactForm);
 
-        
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", yourUrl, true);
+        xhr.open("POST", "https://jh7yib3aub.execute-api.eu-central-1.amazonaws.com/api/contact", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
         xhr.onreadystatechange = function () {
             if (this.readyState != 4) return;
         
-            if (this.status == 200) {
-                var data = JSON.parse(this.responseText);
-        
-                // we get the returned data
-                console.log("data received after post", data)
+            if (this.status == 201 || this.status == 200) {
+                const submitButton = contactForm.querySelector("[type=submit]")
+                submitButton.disabled = true
+                submitButton.classList.add("disabled")
+                contactForm.querySelector(".send-alert").classList.remove("d-none")
+                contactForm.querySelector(".send-spinner").classList.add("d-none");
+                contactSend = true;
             } else {
                 console.log("something went wrong")
+                contactForm.querySelector(".send-error").classList.remove("d-none")
             }
             
         
         };
-        
-        xhr.send(JSON.stringify({
-            value: value
-        }));
+        console.log(contactForm)
+        contactForm.querySelector(".send-spinner").classList.remove("d-none");
+        xhr.send(
+            JSON.stringify({
+                "firstName": formData.get("firstName"),
+                "lastName": formData.get("lastName"),
+                "emailAddress": formData.get("emailAddress"),
+                "phoneNumber": formData.get("phoneNumber"),
+                "name": formData.get("companyName"),
+                "notes": formData.get("notes"),
+                "postalAddress": {
+                    "addressLine1": formData.get("addressLine1"),
+                    "city": formData.get("city"),
+                    "zip": formData.get("zip"),
+                    "country": formData.get("country")
+                }
+            })
+          );
 
 
     })

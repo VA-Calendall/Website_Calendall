@@ -17,7 +17,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
-    "cmel_cookieconsent": "^0.0.6",
+    "cmel_cookieconsent": "^0.0.7",
     "font-awesome": "^4.7.0",
     "swiper": "^8.4.5",
     "vite-plugin-html-inject": "^1.0.1"

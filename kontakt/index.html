@@ -26,100 +26,140 @@
                 <div class="col-12">
                     <form id="contact-form" class="row g-3 needs-validation" novalidate>
                         <div class="col-md-6">
-                            <label for="first-name" class="form-label"
-                                >Vorname</label
+                            <label for="firstName" class="form-label"
+                                >Vorname *</label
                             >
                             <input
-                                id="first-name"
-                                name="first-name"
+                                id="firstName"
+                                name="firstName"
                                 type="text"
                                 class="form-control"
-                                value="Max"
+                                value=""
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>                      
                         </div>
                         <div class="col-md-6">
-                            <label for="last-name" class="form-label"
-                                >Nachname</label
+                            <label for="lastName" class="form-label"
+                                >Nachname *</label
                             >
                             <input
-                                id="last-name"
-                                name="last-name"
+                                id="lastName"
+                                name="lastName"
                                 type="text"
                                 class="form-control"
-                                value="Mustermann"
+                                value=""
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <label for="last-name" class="form-label"
-                                >Email</label
+                            <label for="emailAddress" class="form-label"
+                                >Email *</label
                             >
                             <input
-                                id="email"
-                                name="email"
+                                id="emailAddress"
+                                name="emailAddress"
                                 type="email"
                                 class="form-control"
-                                value="max.mustermann@web.at"
+                                value=""
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld und muss eine gültige Email-Addresse sein.
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <label for="last-name" class="form-label"
-                                >Telefonnummer</label
+                            <label for="phoneNumber" class="form-label"
+                                >Telefonnummer *</label
                             >
                             <input
-                                id="phonenumber"
-                                name="phonenumber"
+                                id="phoneNumber"
+                                name="phoneNumber"
                                 type="tel"
                                 class="form-control"
-                                value="0664 123456789"
+                                value=""
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld und muss eine gültige Telefonnummer sein.
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <label for="city" class="form-label"
-                                >Adresse</label
+                            <label for="companyName" class="form-label"
+                                >Firmenname *</label
                             >
                             <input
-                                type="text"
+                                id="companyName"
+                                name="companyName"
+                                type="tel"
                                 class="form-control"
-                                id="adress"
+                                value=""
                                 required
                             />
+                            
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="addressLine1" class="form-label"
+                                >Adresse *</label
+                            >
+                            <input
+                                id="addressLine1"
+                                name="addressLine1"
+                                type="text"
+                                class="form-control"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <label for="city" class="form-label"
-                                >Stadt</label
+                                >Stadt *</label
                             >
                             <input
+                                id="city"
+                                name="city"
                                 type="text"
                                 class="form-control"
-                                id="city"
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <label for="zip" class="form-label"
-                                >PLZ</label
+                                >PLZ *</label
                             >
                             <input
+                                id="zip"
+                                name="zip"
                                 type="text"
                                 class="form-control"
-                                id="zip"
                                 required
                             />
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="country" class="form-label"
-                                >Land</label
+                                >Land *</label
                             >
                             <select
-                                class="form-select"
                                 id="country"
+                                name="country"
+                                class="form-select"
                                 required
                             >
                                 <option selected value="at">
@@ -131,18 +171,25 @@
                                 <option value="ch">
                                     Schweiz
                                 </option>
+                                <option value="it">
+                                    Italien
+                                </option>
                             </select>
                         </div>
                         <div class="col-md-12">
-                            <label for="note" class="form-label"
-                                >Notiz</label
+                            <label for="notes" class="form-label"
+                                >Notiz *</label
                             >
                             <textarea
+                                id="notes"
+                                name="notes"
                                 class="form-control"
-                                id="note"
                                 rows="5"
                                 required
                             ></textarea>
+                            <div class="invalid-feedback">
+                                Dieses Feld ist ein Pflichtfeld.
+                            </div>
                         </div>
 
                         <div class="col-12">
@@ -158,7 +205,7 @@
                                     class="form-check-label"
                                     for="dsgvo"
                                 >
-                                    Datenschutzbestimmungen akzeptieren
+                                    Datenschutzbestimmungen akzeptieren  *
                                 </label>
                                 <div class="invalid-feedback">
                                     Das akzeptieren der Datenschutzbestimmungen ist erforderlich.
@@ -166,9 +213,24 @@
                             </div>
                         </div>
                         <div class="col-12">
+                            <p class="fs-6 fst-italic text-muted">
+                                * Pflichtfelder
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-12">
                             <button class="primary-button-style" type="submit">
+                                <span class="send-spinner spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
                                 Absenden
-                            </button>
+                            </button> 
+                            
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="send-alert alert alert-success d-none" role="alert">
+                                Erfolgreich abgesendet!
+                            </div>
+                            <div class="send-error alert alert-error d-none" role="alert">
+                                Etwas ist schiefgelaufen!
+                            </div>
                         </div>
                     </form>
                 </div>
