@@ -1052,7 +1052,7 @@
             id="bce4a34f99" height="124" preserveAspectRatio="xMidYMid meet" />
         <mask id="73eeea9fd9">
             <g filter="url(#a66f318ce8)">
-                <rect x="-191.25" width="2295" fill="#000000" class="text-on-right" y="-26.249999" height="314.999991"
+                <rect x="-191.25" width="2295" fill="#fff" class="text-on-right" y="-26.249999" height="314.999991"
                     fill-opacity="0.6471" />
             </g>
         </mask>
@@ -1085,7 +1085,7 @@
             id="93468c556b" height="108" preserveAspectRatio="xMidYMid meet" />
         <mask id="28567e7d9c">
             <g filter="url(#a66f318ce8)">
-                <rect x="-191.25" width="2295" fill="#000000" class="text-on-right" y="-26.249999" height="314.999991"
+                <rect x="-191.25" width="2295" fill="#fff" class="text-on-right" y="-26.249999" height="314.999991"
                     fill-opacity="0.5294" />
             </g>
         </mask>
@@ -1096,7 +1096,7 @@
             <rect x="0" width="2" y="0" height="5" />
         </clipPath>
     </defs>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(293.747129, 201.717298)">
             <g>
                 <path
@@ -1104,7 +1104,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(486.538385, 201.717298)">
             <g>
                 <path
@@ -1112,7 +1112,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(673.543965, 201.717298)">
             <g>
                 <path
@@ -1120,7 +1120,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(839.817557, 201.717298)">
             <g>
                 <path
@@ -1128,7 +1128,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(1013.41967, 201.717298)">
             <g>
                 <path
@@ -1136,7 +1136,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(1218.264426, 201.717298)">
             <g>
                 <path
@@ -1144,7 +1144,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(1422.626982, 201.717298)">
             <g>
                 <path
@@ -1152,7 +1152,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(1609.632563, 201.717298)">
             <g>
                 <path
@@ -1160,7 +1160,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="0.4">
+    <g fill="#fff" class="text-on-right" fill-opacity="0.4">
         <g transform="translate(1775.906154, 201.717298)">
             <g>
                 <path
@@ -1168,7 +1168,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(285.0182, 192.988366)">
             <g>
                 <path
@@ -1176,7 +1176,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(477.809455, 192.988366)">
             <g>
                 <path
@@ -1184,7 +1184,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(664.815036, 192.988366)">
             <g>
                 <path
@@ -1192,7 +1192,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(831.088627, 192.988366)">
             <g>
                 <path
@@ -1200,7 +1200,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(1004.69074, 192.988366)">
             <g>
                 <path
@@ -1208,7 +1208,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(1209.535496, 192.988366)">
             <g>
                 <path
@@ -1216,7 +1216,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(1413.898053, 192.988366)">
             <g>
                 <path
@@ -1224,7 +1224,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(1600.903633, 192.988366)">
             <g>
                 <path
@@ -1232,7 +1232,7 @@
             </g>
         </g>
     </g>
-    <g fill="#000000" class="text-on-right" fill-opacity="1">
+    <g fill="#fff" class="text-on-right" fill-opacity="1">
         <g transform="translate(1767.177225, 192.988366)">
             <g>
                 <path
