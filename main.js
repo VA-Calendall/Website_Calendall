@@ -25,17 +25,17 @@ Aos.init();
 
 document.addEventListener("DOMContentLoaded", function () {
     // init Swiper:
-    const testimonialsSwiper = new Swiper(".testimonial-swiper", {
-        // configure Swiper to use modules
-        modules: [Navigation, Pagination],
-        spaceBetween: 30,
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+    // const testimonialsSwiper = new Swiper(".testimonial-swiper", {
+    //     // configure Swiper to use modules
+    //     modules: [Navigation, Pagination],
+    //     spaceBetween: 30,
+    //     slidesPerView: 1,
+    //     loop: true,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
     // SWIPER END
     
     // scroll START
