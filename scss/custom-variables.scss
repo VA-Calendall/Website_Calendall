@@ -1,7 +1,8 @@
 
 :root {
-    --primary-color: #164538;
-    --primary-hover-color: #9eb5ae;
+    --primary-color: #68866c;
+    --primary-hover-color: #b0c0b3;
+    --primary-hover-text-color: #{darken(#68866c, 17%)};
     --white-color: #ffffff;
     --bs-navbar-nav-link-padding-x: 12px;
 }

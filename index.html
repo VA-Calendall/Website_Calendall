@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <load src="/parts/navigation.html" navbaseclass="navbar-dark" />
+    <load src="/parts/navigation.html" />
 
     <div class="container-fluid">
         <section id="header" class="row">
@@ -39,7 +39,7 @@
                                     vereinfacht, digitalisiert und automatisiert.
                                 </p>
                                 <a href="https://app.calendall.net/signup" target="_blank"
-                                    class="secondary-button-style fs-5">Jetzt kostenlos testen</a>
+                                    class="primary-button-style fs-5">Jetzt kostenlos testen</a>
                             </div>
                         </div>
                     </div>
@@ -309,12 +309,14 @@
                 <h2 class="fs-3">Jetzt Upgraden</h2>
                 <div class="hline mx-auto"></div>
             </div>
-            <div class="fd_employee-input-container mb-5">
-                <div class="range-wrap mb-2">
-                    <output id="employee_value"></output>
-                    <label for="employee-input" class="form-label text-center fs-5">Benutzer</label>
+            <div class="col-8 col-sm-12">
+                <div class="fd_employee-input-container mb-5">
+                    <div class="range-wrap mb-2">
+                        <output id="employee_value"></output>
+                        <label for="employee-input" class="form-label text-center fs-5">Benutzer</label>
+                    </div>
+                    <input min="1" max="10" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
                 </div>
-                <input min="1" max="10" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
             </div>
             <div class="col-md-4 col-12 d-md-flex align-items-center mb-md-0 mb-5">
                 <div class="pricing-plan shadow position-relative w-100">
