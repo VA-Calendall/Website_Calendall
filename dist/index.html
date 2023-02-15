@@ -55,15 +55,15 @@
 
 </script>
 
-  <script type="module" crossorigin src="/assets/main.c7039635.js"></script>
-  <link rel="stylesheet" href="/assets/main.0495f41c.css">
+  <script type="module" crossorigin src="/assets/main.b7090f05.js"></script>
+  <link rel="stylesheet" href="/assets/main.d19be79f.css">
 </head>
 
 <body>
     <!----------------------------- START Navigation ----------------------------->
 <div class="navigation position-fixed">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg {=$navbaseclass}">
 
             <a class="navbar-brand" href="/" aria-label="Logo von Calendall">
                 <img src="/assets/logo.367eb5ca.svg" class="logo-black" width="370px" height="50px" alt="Logo" />
@@ -91,7 +91,7 @@
                     <li class="nav-item">
                         <a class="nav-link fs-5" href="/kontakt/">Kontakt</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-3">
                         <a href="https://app.calendall.net/cam/appointment-calendar"
                             class="primary-button-style">Anmelden</a>
                     </li>
@@ -131,7 +131,7 @@
                                     vereinfacht, digitalisiert und automatisiert.
                                 </p>
                                 <a href="https://app.calendall.net/signup" target="_blank"
-                                    class="secondary-button-style fs-5">Jetzt kostenlos testen</a>
+                                    class="primary-button-style fs-5 fw-bold">Jetzt kostenlos testen</a>
                             </div>
                         </div>
                     </div>
@@ -401,27 +401,29 @@
                 <h2 class="fs-3">Jetzt Upgraden</h2>
                 <div class="hline mx-auto"></div>
             </div>
-            <div class="fd_employee-input-container mb-5">
-                <div class="range-wrap mb-2">
-                    <output id="employee_value"></output>
-                    <label for="employee-input" class="form-label text-center fs-5">Benutzer</label>
+            <div class="col-8 col-sm-12">
+                <div class="fd_employee-input-container mb-5">
+                    <div class="range-wrap mb-2">
+                        <output id="employee_value"></output>
+                        <label for="employee-input" class="form-label text-center fs-5">Benutzer</label>
+                    </div>
+                    <input min="1" max="10" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
                 </div>
-                <input min="1" max="10" type="range" class="form-range w-50 mx-auto" id="employee-input" name="employee-input" value="1" />
             </div>
             <div class="col-md-4 col-12 d-md-flex align-items-center mb-md-0 mb-5">
                 <div class="pricing-plan shadow position-relative w-100">
-                    <span class="position-absolute badge bg-danger badge_custom">
+                    <!-- <span class="position-absolute badge bg-danger badge_custom">
                         25%
-                    </span>
+                    </span> -->
                     <div class="pricing-plan-header">
-                        <h2 class="pricing-plan__titel">Monatliche Zahlung</h2>
+                        <h2 class="pricing-plan__titel">Monatlich</h2>
                     </div>
                     <div class="pricing-plan__description">
                         <div>
                             <p class="d-flex flex-row justify-content-center mb-4 fs-3">
-                                <span class="basic-wrap position-relative">
+                                <!-- <span class="basic-wrap position-relative">
                                     <span class="base-price-per-month fs-3">0.00</span>€
-                                </span>
+                                </span> -->
                                 <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                             </p>
                             <span>
@@ -437,10 +439,10 @@
             <div class="col-md-4 col-12 mb-md-0 mb-5">
                 <div class="pricing-plan shadow position-relative w-100">
                     <span class="position-absolute badge bg-danger badge_custom">
-                        35%
+                        10%
                     </span>
                     <div class="pricing-plan-header">
-                        <h2 class="pricing-plan__titel">Halbjährliche Zahlung</h2>
+                        <h2 class="pricing-plan__titel">Halbjährlich</h2>
                     </div>
                     <div class="w-100 badge_custom_popular">
                         Popular
@@ -465,10 +467,10 @@
             <div class="col-md-4 col-12 d-md-flex align-items-center">
                 <div class="pricing-plan shadow position-relative w-100">
                     <span class="position-absolute badge bg-danger badge_custom">
-                        50%
+                        20%
                     </span>
                     <div class="pricing-plan-header">
-                        <h2 class="pricing-plan__titel">Jährliche Zahlung</h2>
+                        <h2 class="pricing-plan__titel">Jährlich</h2>
                     </div>
                     <div class="pricing-plan__description">
                         <div>
