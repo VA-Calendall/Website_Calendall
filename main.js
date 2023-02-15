@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // scroll START
     
     const navbar = document.querySelector('.navbar')
-    const hasInitialDarkClass = navbar.classList.contains("navbar-dark")
     
     function scrollClassOnBody() {
         const distanceScrolled = document.documentElement.scrollTop;
