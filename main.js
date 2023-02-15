@@ -47,15 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const distanceScrolled = document.documentElement.scrollTop;
         if (distanceScrolled > 0) {
             document.body.classList.add("scrolled")
-            if (hasInitialDarkClass) {
-                navbar.classList.remove("navbar-dark")
-            }
-            
         } else {
             document.body.classList.remove("scrolled")
-            if (hasInitialDarkClass) {
-                navbar.classList.add("navbar-dark")
-            }
         }
     } 
     scrollClassOnBody()
