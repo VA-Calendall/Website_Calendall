@@ -1,8 +1,25 @@
+$primary-color: #afbcb1;
+$primary-hover-color: #afbcb1;
+$primary-hover-text-color: #{darken(#68866c, 17%)};
+$secondary-color: #948786;
+$secondary-hover-color: #948786;
+$secondary-hover-text-color: #{darken(#948786, 17%)};
+$primary-dark-color: #68866c;
+$primary-dark-hover-color: #68866c;
+$primary-dark-hover-text-color: #{darken(#68866c, 17%)};
+$white-color: #ffffff;
+$bs-navbar-nav-link-padding-x: 12px;
 
 :root {
-    --primary-color: #68866c;
-    --primary-hover-color: #b0c0b3;
+    --primary-color: #afbcb1;
+    --primary-hover-color: #afbcb1;
     --primary-hover-text-color: #{darken(#68866c, 17%)};
+    --secondary-color: #948786;
+    --secondary-hover-color: #948786;
+    --secondary-hover-text-color: #{darken(#948786, 17%)};
+    --primary-dark-color: #68866c;
+    --primary-dark-hover-color: #68866c;
+    --primary-dark-hover-text-color: #{darken(#68866c, 17%)};
     --white-color: #ffffff;
     --bs-navbar-nav-link-padding-x: 12px;
 }
