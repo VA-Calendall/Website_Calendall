@@ -924,8 +924,17 @@ input[type=range]::-ms-thumb {
 .background-element-position {
     left: 75%;
     top: 75%;
+    @media (max-width: 767px) {
+        width: 75%;
+    }
 }
 
 .more-letter-spacing {
     letter-spacing: 5px;
+}
+
+.hover-color-black {
+    &:hover {
+        color: black;
+    }
 }
