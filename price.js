@@ -112,9 +112,13 @@ const handlePriceInput = function (employeeInput) {
 document.addEventListener("DOMContentLoaded", function () {
     const employeeInputs = document.querySelectorAll('.employee-input')
     
-    document.querySelector('.preise_decrease-button').addEventListener("click", () => changePriceInputsByValue(employeeInputs, -1))
-    document.querySelector('.preise_increase-button').addEventListener("click", () => changePriceInputsByValue(employeeInputs, 1))
-    
+    document.querySelectorAll('.preise_decrease-button').forEach( el => {
+        el.addEventListener("click", () => changePriceInputsByValue(employeeInputs, -1))
+    })
+    document.querySelectorAll('.preise_increase-button').forEach( el => {
+        el.addEventListener("click", () => changePriceInputsByValue(employeeInputs, 1))
+    })
+
     console.log(employeeInputs)
     for (let i = 0; i < employeeInputs.length; i++) {
         const employeeInput = employeeInputs[i];
