@@ -590,7 +590,7 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 35px;
 } */
 
-.fd_employee-input-container {
+.employee-input-container {
     display:flex;
     flex-direction: column;
     label {
@@ -598,6 +598,8 @@ p, h1,h2,h3,h4,h5,h6 {
     }
     input {
         border: 0;
+        min-width: 50%;
+        text-align: center;
         @media (max-width: 575px) {
             width:100%!important;
         }

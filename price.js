@@ -48,6 +48,24 @@ const PriceList = {
         10: 51.50
     }
 };
+const maxUsers = 10;
+
+const changePriceInputsByValue = function (elements, value) {
+    
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const nextValue = parseInt(element.value) + value
+        if (nextValue <= 0) {
+            element.value = 1
+        } else if (nextValue >= maxUsers) {
+            element.value = maxUsers
+        } else {
+            element.value = nextValue;
+        }
+
+        element.dispatchEvent(new Event('change'));
+    }
+}
 
 const changePrice = function (element, price) {
     let priceDecimals = price.toFixed(2);
@@ -55,6 +73,7 @@ const changePrice = function (element, price) {
 }
 
 const handlePriceInput = function (employeeInput) {
+    console.log(employeeInput.value)
     
 
     if (parseInt(employeeInput.value) <= 0) {
@@ -91,17 +110,24 @@ const handlePriceInput = function (employeeInput) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const employeeInput = document.querySelector('#employee-input')
-    const value = document.querySelector("#employee_value")
-
-    if (value && employeeInput) {
-        handlePriceInput(employeeInput)
-        employeeInput.addEventListener("input", () => handlePriceInput(employeeInput))
-
-        value.textContent = employeeInput.value
-        employeeInput.addEventListener("input", (event) => {
-            value.textContent = event.target.value
-        })
+    const employeeInputs = document.querySelectorAll('.employee-input')
+    
+    document.querySelector('.preise_decrease-button').addEventListener("click", () => changePriceInputsByValue(employeeInputs, -1))
+    document.querySelector('.preise_increase-button').addEventListener("click", () => changePriceInputsByValue(employeeInputs, 1))
+    
+    console.log(employeeInputs)
+    for (let i = 0; i < employeeInputs.length; i++) {
+        const employeeInput = employeeInputs[i];
+    
+        if (employeeInput) {
+            handlePriceInput(employeeInput)
+            employeeInput.addEventListener("change", () => handlePriceInput(employeeInput))
+    
+            // value.textContent = employeeInput.value
+            // employeeInput.addEventListener("change", (event) => {
+            //     value.textContent = event.target.value
+            // })
+        }
     }
 });
 
