@@ -9,9 +9,10 @@ on:
         branches:
             - master
             - main
-
+permissions:
+    contents: write
 jobs:
-    build:
+    build-and-deploy:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
