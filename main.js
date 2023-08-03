@@ -16,25 +16,26 @@ Aos.init();
 // SWIPER START
 
 // core version + navigation, pagination modules:
-// import Swiper, { Navigation, Pagination } from "swiper";
-// // import Swiper and modules styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 document.addEventListener("DOMContentLoaded", function () {
     // init Swiper:
-    // const testimonialsSwiper = new Swiper(".testimonial-swiper", {
-    //     // configure Swiper to use modules
-    //     modules: [Navigation, Pagination],
-    //     spaceBetween: 30,
-    //     slidesPerView: 1,
-    //     loop: true,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    // });
+    
+    const testimonialsSwiper = new Swiper(".testimonial-swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Pagination],
+        spaceBetween: 30,
+        slidesPerView: 1,
+        loop: document.querySelectorAll('.testimonial-swiper .swiper-slide').length > 1,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
     // SWIPER END
     
     // scroll START

@@ -108,6 +108,15 @@ p, h1,h2,h3,h4,h5,h6 {
 
 #header {
     position: relative;
+    @media (max-width: 1080px) {
+        padding-top: 2rem;
+    }
+    @media (max-width: 768px) {
+        padding-top: 3rem;
+    }
+    @media (max-width: 358px) {
+        padding-top: 4rem;
+    }
 }
 
 .header-overlay {
@@ -965,4 +974,8 @@ input[type=range]::-ms-thumb {
 }
 .min-h-100 {
     min-height: 100%;
+}
+
+.justify-self-center {
+    justify-self: center;
 }
