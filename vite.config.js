@@ -21,6 +21,7 @@ export default defineConfig({
                 agb: resolve(__dirname, "agb/index.html"),
                 friseursalon: resolve(__dirname, "friseursalon/index.html"),
                 kosmetikstudio: resolve(__dirname, "kosmetikstudio/index.html"),
+                nagelstudio: resolve(__dirname, "nagelstudio/index.html"),
             },
         },
     },
