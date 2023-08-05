@@ -20,6 +20,7 @@ export default defineConfig({
                 kontakt: resolve(__dirname, "kontakt/index.html"),
                 agb: resolve(__dirname, "agb/index.html"),
                 friseursalon: resolve(__dirname, "friseursalon/index.html"),
+                kosmetikstudio: resolve(__dirname, "kosmetikstudio/index.html"),
             },
         },
     },
