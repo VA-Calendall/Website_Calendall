@@ -108,11 +108,23 @@ p, h1,h2,h3,h4,h5,h6 {
 
 #header {
     position: relative;
+    .text-box {
+        position: absolute;
+        color: white;
+        padding: 0 3rem;
+    }
     @media (max-width: 1080px) {
-        padding-top: 2rem;
+        padding-top: 1.3rem;
     }
     @media (max-width: 768px) {
-        padding-top: 3rem;
+        padding-top: 1.3rem;
+        .text-box{
+            position: relative;
+            color: black;
+            padding: 3rem 0 0;
+            text-align: center;
+            align-items: center;
+        }
     }
     @media (max-width: 358px) {
         padding-top: 4rem;
