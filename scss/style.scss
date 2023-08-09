@@ -105,8 +105,20 @@ p, h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
     font-family: "OpenSauce", sans-serif;
 }
-
 #header {
+    position: relative;
+    @media (max-width: 1080px) {
+        padding-top: 1.3rem;
+    }
+    @media (max-width: 768px) {
+        padding-top: 1.3rem;
+    }
+    @media (max-width: 358px) {
+        padding-top: 4rem;
+    }
+}
+
+#header-subpages {
     position: relative;
     .text-box {
         position: absolute;
