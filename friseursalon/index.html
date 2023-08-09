@@ -12,10 +12,10 @@
     <load src="/parts/navigation.html" />
     <div class="overflow-hidden pt-5">
         <section id="header" class="container-fluid position-relative overflow-hidden">
-            <div class="container mb-5 py-5 position-relative min-vh-75">
+            <div class="container mb-5 position-relative">
                 <div class="row d-flex align-items-center">
-                    <div class="col-12 col-sm-6 mb-5">
-                        <div class="text-box">
+                    <div class="col-12 col-sm-6">
+                        <div class="text-box position-absolute h-100 d-flex justify-content-center flex-column px-5">
                             <h1 class="fs-1 text-white">
                                 Vereinfache und<br> 
                                 optimiere die Abläufe in<br>
@@ -33,7 +33,8 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <img class="position-absolute z-n1 top-0 start-50 translate-middle-x min-w-100 min-h-100 w-auto" src="/images/friseursalon/header.png" alt="" />
+                        <img class="w-100 h-auto d-none d-md-block" src="/images/friseursalon/header.png" alt="" />
+                        <img class="w-100 h-auto d-block d-md-none" src="/images/friseursalon/header_mobile.png" alt="" />
                     </div>
                 </div>            
             </div>
