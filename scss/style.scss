@@ -220,9 +220,12 @@ p, h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     padding: 8px 12px;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     /* font-size: 13px; */
-    &:after {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    &:before {
         content: "";
         width: 0%;
         height: 2px;
@@ -231,7 +234,7 @@ p, h1,h2,h3,h4,h5,h6 {
         margin: auto;
         transition: 0.5s;
     }
-    &:hover::after {
+    &:hover::before {
         width: 100%;
     }
 }
@@ -981,4 +984,21 @@ input[type=range]::-ms-thumb {
 }
 .justify-items-center {
     justify-items: center;
+}
+
+.navbar-nav .nav-link.dropdown-toggle {
+    &:after {
+        position: absolute;
+        right: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        &:after{
+            width: 0%;
+        }
+    }
+}
+
+.dropdown-item:active{
+    background-color: $primary-dark-color;
 }

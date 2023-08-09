@@ -1,6 +1,7 @@
 // BOOTSTRAP START
 import "./scss/style.scss";
 import "bootstrap/js/dist/collapse.js";
+import "bootstrap/js/dist/dropdown.js";
 import '@justinribeiro/lite-youtube';
 
 //import "bootstrap/js/dist/";
