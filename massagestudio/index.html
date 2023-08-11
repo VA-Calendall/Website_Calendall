@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+    <title>Calendall - Onlinekalender</title>
+
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+<link rel="manifest" href="images/favicon//site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<meta name="description" content="Ersetzen Sie Ihre herkömmlichen Buchkalender durch unseren benutzerfreundlichen Online-Kalender für Friseure, Beatysalons, Nagelstudios und mehr. Verwalten Sie Termine und Kunden mit Leichtigkeit." />
+<meta property="og:title" content="Calendall - Onlinekalender" />
+<meta property="og:url" content="https://www.calendall.net/" />
+<meta property="og:image" content="https://www.calendall.net/images/logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Ersetzen Sie Ihre herkömmlichen Buchkalender durch unseren benutzerfreundlichen Online-Kalender für Friseure, Beatysalons, Nagelstudios und mehr. Verwalten Sie Termine und Kunden mit Leichtigkeit." />
+<meta property="og:locale" content="de_DE" />
+
+
+
+<!-- Google tag (gtag.js) -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        cookieListener()
+        document.body.addEventListener("ConsentAccepted", cookieListener)
+    })
+    function cookieListener() {
+        for (let i = 0; i < window.consent.acceptedCategories.length; i++) {
+            const element = window.consent.acceptedCategories[i];
+            console.log(element.id)
+
+            if (element.id == "marketing") {
+                enableGoogleAnalytics()
+            }
+        }
+    }
+    function enableGoogleAnalytics(params) {
+        var googleAnalyticsScriptTag = document.createElement("script")
+        googleAnalyticsScriptTag.setAttribute("async", "")
+        googleAnalyticsScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-JYFVC4Q3TT"
+        document.body.append(googleAnalyticsScriptTag)
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYFVC4Q3TT');
+    }
+
+</script>
+
+  <script type="module" crossorigin src="/assets/main.806fb4b5.js"></script>
+  <link rel="stylesheet" href="/assets/main.d73c97c5.css">
+</head>
+
+<body>
+    <!----------------------------- START Navigation ----------------------------->
+<div class="navigation position-fixed">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg {=$navbaseclass} p-0">
+
+            <a class="navbar-brand" href="/" aria-label="Logo von Calendall">
+                <img src="/assets/logo.367eb5ca.svg" class="logo-black" width="370px" height="50px" alt="Logo" />
+                <img src="/assets/logo_white.7f0fe288.svg" class="logo-white" width="370px" height="50px" alt="Logo in weiss" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 py-4" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 py-4" href="/#preise">Preise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 py-4" href="/#feature">Vorteile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 py-4 pe-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lösungen für
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-5" href="/friseursalon/">Friseursalon</a></li>
+                            <li><a class="dropdown-item fs-5" href="/kosmetikstudio/">Kosmetikstudio</a></li>
+                            <li><a class="dropdown-item fs-5" href="/barbershop/">Barbershop</a></li>
+                            <li><a class="dropdown-item fs-5" href="/nagelstudio/">Nagelstudio</a></li>
+                            <!-- <li><a class="dropdown-item fs-5" href="/#about">Fußpflegepraxis</a></li>
+                            <li><a class="dropdown-item fs-5" href="/#about">Massagestudio</a></li>
+                            <li><a class="dropdown-item fs-5" href="/#about">Physiotherapie</a></li> -->
+                        </ul>
+                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 py-4 pe-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Über uns
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item fs-5" href="/ueber-uns/">Über uns</a></li>
+                          <li><a class="dropdown-item fs-5" href="/impressum/">Impressum</a></li>
+                          <li><a class="dropdown-item fs-5" href="/kontakt/">Kontakt</a></li>
+                        </ul>
+                      </li>
+              
+                    <li class="nav-item ms-3">
+                        <a href="https://app.calendall.net/cam/appointment-calendar"
+                            class="primary-dark-button-style">Anmelden</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!----------------------------- END Navigation ----------------------------->
+
+    <div class="overflow-hidden pt-5">
+        <section id="header-subpages" class="container-fluid position-relative overflow-hidden">
+            <div class="container mb-5 position-relative">
+                <div class="row d-flex justify-content-center flex-column-reverse flex-md-column">
+                    <div class="col-12 col-md-6">
+                        <div class="text-box h-100 d-flex justify-content-center flex-column">
+                            <h1 class="fs-1">
+                                Schaffe eine Wohlfühloase<br> 
+                                der Organisation in deinem<br>
+                                Massagestudio!        
+                            </h1>
+                            <p class="fs-5">
+                                Minimiere deinen administrativen Aufwand, optimiere<br>
+                                die Planung deiner Termine und sorge für eine<br>
+                                erstklassige BEtreuung deiner Gäste.
+                            </p>
+                            <div class="mt-5 position-relative d-inline-block">
+                                <a href="https://app.calendall.net/signup" target="_blank"
+                                    class="bg-secondary-color px-5 pt-1 pb-2 rounded-4 fs-4 hover-color-black d-inline-block">Jetzt 14 Tage gratis testen</a>
+                                    <img class="arrow start-100 arrow-rotate-more" src="/assets/arrow.28897d03.png" alt="Button um eine Demoversion zu testen" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <img class="w-100 h-auto" src="/images/massagestudio/massagestudio.png" alt="Masseurin massiert Ihren Patienten" />
+                        <!-- <img class="w-100 h-auto d-none d-md-block" src="/images/kosmetik/Kosmetik.png" alt="Kosmetikerin in Ihrem Studio" />
+                        <img class="w-100 h-auto d-block d-md-none" src="/images/friseursalon/header_mobile.png" alt="" /> -->
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <!----------------------------- About Calendall ----------------------------->
+        <section id="about" class="container-fluid position-relative py-5 mb-5 text-center">
+            <div class="container position-relative">
+                <div class="row justify-content-center ">
+                    <div class="col-10 col-lg-8">
+                        <h2 class="fs-3"><strong>Einfach, effizient und übersichtlich</strong> - Calendall ist der ideale <strong>Online-Kalender</strong> für Ihr Massagestudio</h2>
+                        <p class="fs-5 text-center mt-5 mb-5">
+                            Steigere die Effizienz deines Kosmetikstudios mit Calendall, dem ultimativen Online-Kalender. Profitiere von den zahlreichen Vorteilen, die dir unser Produkt bietet:
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 py-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Jederzeit auf jedem Gerät verfügbar</h3>
+                            <p class="fs-6 mt-5 mb-5">
+                              Mit unserer Web-app behalten Sie jederzeit den Überblick über Ihre Massagestudio-Termine, <strong>ganz egal, wo Sie sich gerade befinden.</strong>                        
+                            </p>
+                            <picture class="align-self-end">
+                                <!-- <source srcset="/images/friseursalon/about_01.webp" type="image/webp"> -->
+                                <source srcset="/assets/about_01.88e33bd3.png " type="image/png" />
+                                <img src="/assets/about_01.88e33bd3.png" class="w-75 h-auto" alt="Jederzeit auf jedem Gerät verfügbar" width="636px" height="473px" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 pt-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Offline Verfügbarkeit</h3>
+                            <p class="fs-6 mt-5 mb-5">
+                              Selbst wenn es im Studio zu einem vorübergehenden Internetausfall kommt, bleiben Ihre <strong>Termine geschützt</strong>: Mit Calendall behalten Sie Zugriff auf Ihren Online-Kalender, selbst <strong>ohne aktive Internetverbindung</strong>.
+                            </p>
+                            <picture class="align-self-end">
+                                <!-- <source srcset="/images/friseursalon/about_01.webp" type="image/webp"> -->
+                                <source srcset="/assets/about_02.1ac3cf09.png " type="image/png" />
+                                <img src="/assets/about_02.1ac3cf09.png" class="w-60 h-auto" alt="Jederzeit auf jedem Gerät verfügbar" width="636px" height="473px" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <img class="position-absolute z-n1 top-50 start-100 translate-middle-y h-100 w-auto" src="/assets/background_element_2.cedda4bb.png" alt="" />
+            </div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 py-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Volle Flexibilität</h3>
+                            <p class="fs-6 mt-5 mb-5">
+                              Gestalten Sie die Abläufe in Ihrem Massagestudio ganz nach Ihren Vorstellungen: Mit Calendall <strong>verschieben Sie mühelos Termine auf andere Zeitpunkte oder Therapeuten</strong> und passen die <strong>Dauer der Behandlungen flexibel</strong> an.
+                            </p>
+                            <video autoplay loop muted plays-inline playsinline class="w-75 justify-self-center">
+                                <source src="/assets/about_03.cc72305d.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 py-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Terminvorlagen und Bausteine</h3>
+                            <p class="fs-6 mt-5 mb-5">
+                              Optimieren Sie die Terminplanung in Ihrem Massagestudio und gewinnen Sie wertvolle Zeit: Verwenden Sie <strong>gespeicherte Vorlagen mit Zeitangaben und Bezeichnungen für regelmäßige Termine</strong> und erfassen Sie diese mühelos und unkompliziert.
+                            </p>
+                            <picture class="align-self-end">
+                                <!-- <source srcset="/images/friseursalon/about_01.webp" type="image/webp"> -->
+                                <source srcset="/assets/about_04.5df4d43f.png " type="image/png" />
+                                <img src="/assets/about_04.5df4d43f.png" class="w-75 h-auto" alt="Jederzeit auf jedem Gerät verfügbar" width="636px" height="473px" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <img class="position-absolute z-n1 top-50 end-100 translate-middle-y h-100 w-auto" src="/assets/background_element_1.53e33a53.png" alt="" />
+            </div>
+            <div class="container position-relative">
+                <div class="row position-relative">
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 py-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Integration von Reminder</h3>
+                            <p class="fs-6 mt-5 mb-3">
+                              Bieten Sie Ihren Kunden in Ihrem Massagestudio einen zusätzlichen Komfort: <strong>Erinnerungen an bevorstehende Termine per SMS oder E-Mail</strong> helfen ihnen, ihre gebuchten Wellnessmomente nicht zu versäumen.
+                            </p>
+                            <picture class="align-self-end">
+                                <!-- <source srcset="/images/friseursalon/about_01.webp" type="image/webp"> -->
+                                <source srcset="/assets/about_05.e611544f.png " type="image/png" />
+                                <img src="/assets/about_05.e611544f.png" class="w-75 h-auto" alt="Jederzeit auf jedem Gerät verfügbar" width="636px" height="473px" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-stretch justify-content-center">
+                        <div class="position-relative bg-white rounded-3 text-center shadow-sm px-4 pt-5 mb-4 d-grid justify-items-center align-items-center">
+                            <h3 class="fs-5 fw-normal border border-dark rounded-pill py-1 px-3 d-inline-block">Integrierte Kundenkartei</h3>
+                            <p class="fs-6 mt-5 mb-5">
+                              Behalten Sie den Überblick über Ihre Kundenbeziehungen in Ihrem Massagestudio dank <strong>Calendall's digitaler Kundendatenbank</strong> – für eine reibungslose Organisation und effektive Arbeitsabläufe.
+                            </p>
+                            <picture class="align-self-end">
+                                <!-- <source srcset="/images/friseursalon/about_01.webp" type="image/webp"> -->
+                                <source srcset="/assets/about_06.26e8dc42.png " type="image/png" />
+                                <img src="/assets/about_06.26e8dc42.png" class="w-75 h-auto" alt="Jederzeit auf jedem Gerät verfügbar" width="636px" height="473px" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <img class="position-absolute z-n1 top-50 start-100 translate-middle-y h-100 w-auto" src="/assets/background_element_2.cedda4bb.png" alt="" />
+            </div>
+        </section>
+        
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-8 text-center mb-5 position-relative">
+                    <h2 class="fs-3">Warum Massagestudios Calendall verwenden</h2>
+                    <img class="position-absolute z-n1 top-50 start-100 translate-middle-y h-100 w-auto" src="/assets/scissors.2ec30d72.png" alt="" />
+                </div>
+                <div class="col-12 col-sm-10">
+                    <section class="cooperation-text">
+                        <p class="fs-5 text-center">
+                            Unser Onlinekalender bietet eine benutzerfreundliche Oberfläche, die es einfach macht, den Überblick über Termine und Kunden zu behalten. Mit unserer Massagestudio-Software sparst du Zeit, organisierst dich besser und steigerst die Effizienz deines Studios. Verabschiede dich von chaotischen Papierkalendern und probiere Calendall aus!
+                        </p>
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container position-relative">
+            <!---------Testimonials START--------->
+            <section id="referenzen" class="row mb-5 pb-5 justify-content-center">
+                
+                <div class="col-md-12">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex justify-content-center h-auto">
+                                <div class="testimonial shadow my-5 mx-2 text-center">
+                                    <div class="testimonial-content">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p class="fs-5">
+                                            "Wir benutzen Calendall jetzt seit ein paar Monaten und wir sind extrem zufrieden! Es hat alles, was man braucht, ohne überladen zu wirken."
+                                        </p>
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </div>
+                                    <div class="hline mx-auto"></div>
+                                    <p class="name mt-3 mb-0 d-flex flex-column align-items-center">
+                                        <!--<img src="/images/friseursalon/referenz_1.jpg" class="rounded-circle mb-3" style="width: 100px; height: 100px;" />-->
+                                        <strong class="fs-5"><em>Massagezentrum Zebert</em></strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section> 
+            <!---------Testimonials END--------->
+            <img class="position-absolute z-n1 top-50 end-100 translate-middle-y h-100 w-auto" src="/assets/background_element_2.cedda4bb.png" alt="" />
+        </div>
+
+        <!----------------------------- Free Trial ----------------------------->
+        <div class="container-fluid overflow-hidden position-relative">
+            <section id="demo-version" class="row text-center py-5 justify-content-center text-white"
+                data-aos="fade-up">
+                <div class="col-10 col-sm-6">
+                    <h2 class="fs-1 fw-bold mb-4">In 2 Schritten zu Ihrem Studiokalender</h2>
+                    <p class="fs-5 mb-3">
+                        14 Tage kostenlos. Ohne Verpflichtungen 
+                    </p>
+                    <a href="https://app.calendall.net/signup" class="button-white fs-4 rounded-4 mb-5 hover-color-black"><span>Jetzt Demo testen</span></a>
+                </div>
+            </section>
+            <div class="round-background bg-secondary-color"></div>
+        </div>
+    </div>
+
+    <!----------------------------- START Footer ----------------------------->
+<footer class="footer py-5 marble-background text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-flex mb-lg-0 mb-4 flex-column justify-content-start align-items-center">
+                <img src="/assets/Logo_white.6806db5b.png" alt="" class="w-50 mb-3">
+                <div class="social-icons">
+                    <a class="text-black" aria-label="Facebook von Calendall" target="_blank" href="https://www.facebook.com/calendall_official/"
+                        ><i class="fs-1 fa fa-facebook"></i
+                    ></a>
+                    <a class="text-black" aria-label="Instagram von Calendall" target="_blank" href="https://www.instagram.com/calendall_official/"
+                        ><i class="fs-1 fa fa-instagram"></i
+                    ></a>
+                    <a class="text-black" aria-label="Youtube von Calendall" target="_blank" href="https://www.youtube.com/@calendallofficial"
+                        ><i class="fs-1 fa fa-youtube"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-column mb-lg-0 mb-4">
+                <h3 class="fw-bold">Calendall</h3>
+                <a class="text-white fs-5 py-1 fw-light" href="/#preise">Preise</a>
+                <a class="text-white fs-5 py-1 fw-light" href="https://app.calendall.net/cam/appointment-calendar" target="_blank">Anmelden</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/kontakt/">Kontakt</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/agb/">Nutzungsbedinnungen</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/datenschutz/">Datenschutzerklärung</a>
+                <a
+                    class="text-white fs-5 py-1 fw-light"
+                    href="javascript:void(0)"
+                    onclick="document.getElementById('cookieconsent').classList.remove('cookieconsent__hide')"
+                    >Cookie Consent abrufen</a
+                >
+            </div>
+            <div class="col-lg-3  d-flex flex-column mb-lg-0 mb-4">
+                <h3 class="fw-bold">Lösungen für</h3>
+                <a class="text-white fs-5 py-1 fw-light" href="/friseursalon/">Friseursalon</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/kosmetikstudio/">Kosmetikstudio</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/barbershop/">Barbershop</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/nagelstudio/">Nagelstudio</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/#about">Fußpflegepraxis</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/#about">Massagestudio</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/#about">Physiotherapie</a>
+            </div>
+            <div class="col-lg-3 d-flex flex-column mb-lg-0 mb-4">
+                <h3 class="fw-bold">Über uns</h3>
+                <a class="text-white fs-5 py-1 fw-light" href="/ueber-uns/">Über uns</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/impressum/">Impressum</a>
+                <a class="text-white fs-5 py-1 fw-light" href="/kontakt/">Kontakt</a>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <p class="text-center text-white mb-5 fs-4 more-letter-spacing">
+                    IHR SALONKALENDER <br>
+                    <span class="text-black">CALENDALL</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!----------------------------- END Footer ----------------------------->
+
+
+
+    <!----------------------------- Animated on Scroll  ----------------------------->
+
+    
+</body>
+
+</html>
