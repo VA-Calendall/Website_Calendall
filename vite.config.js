@@ -23,6 +23,7 @@ export default defineConfig({
                 kosmetikstudio: resolve(__dirname, "kosmetikstudio/index.html"),
                 barbershop: resolve(__dirname, "barbershop/index.html"),
                 nagelstudio: resolve(__dirname, "nagelstudio/index.html"),
+                massagestudio: resolve(__dirname, "massagestudio/index.html"),
             },
         },
     },
