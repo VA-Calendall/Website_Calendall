@@ -12,6 +12,7 @@ import "./price.js";
 // AOS (animate on scroll) START
 import Aos from "aos";
 Aos.init();
+console.log("hello", Aos);
 // AOS (animate on scroll) END
 
 // SWIPER START
@@ -53,8 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
     scrollClassOnBody()
     window.addEventListener("scroll", scrollClassOnBody, true) 
-    
-    
     
     // Navigation mobile toggle
 
@@ -124,8 +123,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             })
           );
-
-
     })
-
 })

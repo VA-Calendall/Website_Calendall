@@ -99,7 +99,7 @@ const handlePriceInput = function (employeeInput) {
     //changePrice(document.getElementById("monthly-payment-price-per-year"), PriceList["month"][index] * 12)
 
     // half year
-    changePrice(document.getElementById("half-yearly-payment-price-per-month"), PriceList["half-year"][index])
+    //changePrice(document.getElementById("half-yearly-payment-price-per-month"), PriceList["half-year"][index])
     //changePrice(document.getElementById("half-yearly-payment-price-per-year"), PriceList["half-year"][index] * 12)
 
     // year
@@ -107,7 +107,6 @@ const handlePriceInput = function (employeeInput) {
     //changePrice(document.getElementById("yearly-payment-price-per-year"), PriceList["year"][index] * 12)
     
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const employeeInputs = document.querySelectorAll('.employee-input')
@@ -133,6 +132,31 @@ document.addEventListener("DOMContentLoaded", function () {
             // })
         }
     }
+
+    //Start - On click Switch Function
+    
+    function switchContainer() {
+        var radioL = document.getElementById("switch_left");
+        var radioR = document.getElementById("switch_right");
+        var categories = document.getElementById("monthly");
+        var alphabetical = document.getElementById("yearly");
+    
+        if (radioL.checked == true){
+           categories.style.display = "block";
+        } else {
+           categories.style.display = "none";
+        }
+        if (radioR.checked == true){
+           alphabetical.style.display = "block";
+        } else {
+           alphabetical.style.display = "none";
+        }
+    }
+
+    document.getElementById('switch_left').addEventListener('click', switchContainer)
+    document.getElementById('switch_right').addEventListener('click', switchContainer)
+
+     //END - On click Switch Function
 });
 
 
