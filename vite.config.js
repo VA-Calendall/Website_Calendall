@@ -1,4 +1,4 @@
-import { resolve, join } from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 import Sitemap from 'vite-plugin-sitemap'
@@ -16,7 +16,6 @@ export default defineConfig({
         })
     ],
     build: {
-        outDir: join(__dirname, "_site"),
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),

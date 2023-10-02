@@ -22,6 +22,8 @@ jobs:
               run: npm run build
             - name: Remove CNAME
               run: rm -f CNAME
+            - name: Move dist to _site
+              run: mv dist _site
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
     deploy:
