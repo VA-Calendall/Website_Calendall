@@ -1,0 +1,37 @@
+name: Deploy-DEV
+
+on:
+    push:
+        branches:
+            - master
+            - main
+    pull_request:
+        branches:
+            - master
+            - main
+permissions:
+    contents: write
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install dependencies
+              run: npm install
+            - name: Build
+              run: npm run build
+            - name: Remove CNAME
+              run: rm -f CNAME
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
+    deploy:
+        environment:
+            name: dev
+            url: ${{steps.deployment.outputs.page_url}}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
+      
