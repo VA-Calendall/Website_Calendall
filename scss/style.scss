@@ -74,9 +74,9 @@
         url("/fonts/open-sauce-sans/OpenSauceSans-Italic.ttf") format("ttf");
 }
 
-body {
-    background-color: #edebed;
-}
+// body {
+//     background-color: #edebed;
+// }
 
 .navbar {
     --bs-navbar-nav-link-padding-x: 12px;
@@ -113,19 +113,56 @@ h6 {
     font-family: "OpenSauce", sans-serif;
 }
 
-#header {
-    position: relative;
-
-    @media (max-width: 1080px) {
-        padding-top: 1.3rem;
-    }
+/*---------- Typography ----------*/
+.fs-1-header {
+    font-size: 4rem;
 
     @media (max-width: 768px) {
-        padding-top: 1.3rem;
+        font-size: 35px;
+    }
+    @media (max-width: 475px) {
+        font-size: 30px;
+    }
+}
+
+.fs-2-header {
+    font-size: 3rem;
+    @media (max-width: 768px) {
+        font-size: 25px;
+    }
+    @media (max-width: 475px) {
+        font-size: 20px;
+    }
+}
+
+#header {
+    height: 100vh;
+
+    @media (max-width: 1199px) {
+        height: 90vh;
     }
 
-    @media (max-width: 358px) {
-        padding-top: 4rem;
+    @media (max-width: 991px) {
+        height: 70vh;
+    }
+
+    @media (max-width: 767px) {
+        height: 70vh;
+    }
+    @media (max-width: 475px) {
+        height: 60vh;
+    }
+
+    .header-image {
+        height: 100%;
+        width: auto;
+        z-index: -1;
+        @media (max-width: 575px) {
+            right: -20%!important;
+        }
+        @media (max-width: 475px) {
+            right: -35%!important;
+        }
     }
 }
 
@@ -620,6 +657,17 @@ h6 {
 .secondary-color {
     color: var(--secondary-color);
 }
+
+.tertiary-color {
+    color: var(--tertiary-color);
+}
+
+.bg-tertiary-color {
+    background-color: var(--tertiary-color);
+    color: var(--white-color);
+}
+
+
 
 /* .container-4{
     background-color: var(--primary-color);
