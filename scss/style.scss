@@ -1185,3 +1185,19 @@ input[type=range]::-ms-thumb {
         }
     }
 }
+
+//Media
+.absolute-height {
+    height: 35rem;
+    width: auto;
+    @media (max-width: 1199px) {
+        height: 25rem;
+    }
+
+    img {
+        position: absolute;
+        @media (max-width: 991px) {
+            position: inherit;
+        }
+    }
+}

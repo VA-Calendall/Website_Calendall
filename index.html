@@ -52,11 +52,11 @@
             </div>
         </section>
 
-        <div class="container">
-            <!----------------------------- Terminplannunug ----------------------------->
-            <section id="terminplannunug"
-                class="row scheduling flex-lg-row flex-column-reverse align-items-center mb-5 position-relative mt-5"
-                data-aos="fade-up">
+        <!----------------------------- Online Terminkalender ----------------------------->
+        <section id="online-terminkalender"
+            class="container scheduling mb-5 mt-5 position-relative"
+            data-aos="fade-up">
+            <div class="row flex-lg-row flex-column-reverse align-items-center">
                 <div class="col-lg-5 col-8 mb-3">
                     <img class="mw-100" src="/images/1-terminplanung-new.png" />
                 </div>
@@ -71,155 +71,115 @@
                         Trage deine Termine mühelos ein und behalte alles im Blick. Mit einem Klick schiebst du Termine flexibel hin und her.
                     </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!----------------------------- Kundenmanagement ----------------------------->
-            <section id="kundenmanagement" class="row mb-5 text-center justify-content-center align-items-center" data-aos="fade-up">
-                <div class="col-lg-6 col-12">
-                    <h4 class="mb-4">
-                        <strong> Terminerinnerungen</strong>
-                    </h4>
-                    <p class="fs-5">
-                        Verabschiede dich von vergessenen Terminen durch <strong class="primary-dark-color">SMS- und E-Mail-Erinnerungen</strong>. 💬
-                    </p>
-                    <p class="fs-5">
-                        Wir erinnern dich auch an die <strong class="primary-dark-color">Geburtstage</strong> deiner Kunden. 🎂
-                    </p>
-                </div>
-                <div class="offset-lg-1 col-lg-5 col-8 mb-3 position-relative">
-                    <img class="mw-100" src="/images/2-kundenmanagement-new.png" />
-                </div>
-            </section>
-
-            <!----------------------------- Statistik ----------------------------->
-            <section id="statistik" class="row flex-lg-row flex-column-reverse mb-5 align-items-center" data-aos="fade-up">
-                <div class="col-lg-6 col-12">
-                    <h4>
-                        Mit dem <strong>Statistiktool</strong> erfasst die Software bei jedem Termin bzw. bei jedem
-                        Kunden die <strong>Umsätze, Termine und Anwesenheitszeiten</strong>.
-                    </h4>
-                    <p class="fs-5">
-                        Dank dieser Funktion können Sie jederzeit in den Statistiken nach Informationen suchen, die für
-                        Ihr Unternehmen von Interesse sein könnten
-                    </p>
-                </div>
-                <div class="col-lg-6 col-8 mb-3">
-                    <picture>
-                        <source srcset="/images/3-statistik.webp" type="image/webp">
-                        <source srcset="/images/3-statistik.png" type="image/png" />
-                        <img src="/images/3-statistik.png" class="mw-100 h-auto"
-                            alt="Statistikansicht in der Calendall-App" width="636px" height="473px" />
-                    </picture>
-                </div>
-            </section>
-
-
-            <!----------------------------- Prices ----------------------------->
-
-            <section id="preise" class="row py-5 text-center justify-content-center mb-5 position-relative"
-                data-aos="fade-up">
-                <img class="position-absolute z-n1 top-0 end-100 translate-middle-y h-100 w-auto"
-                    src="/images/background_element_2.png" alt="" />
-                <div class="col-12 mb-5">
-                    <h2 class="fs-3">Jetzt Upgraden</h2>
-                    <div class="hline mx-auto"></div>
-                </div>
-
-                <!-- SWITCH-CONTAINER START -->
-                <div class="col-12 switch-container">
-                    <!-- SWITCH START -->
-                    <div class="switch-field d-flex justify-content-center mb-5">
-                        <input type="radio" id="switch_left" name="switch_2" value="yes" checked />
-                        <label for="switch_left">Monatlich</label>
-                        <input type="radio" id="switch_right" name="switch_2" value="no" />
-                        <label for="switch_right">Jährlich</label>
-                    </div>
-                    <!-- SWITCH END -->
-                    <div class="col-md-5 col-12 d-flex justify-content-center mx-auto switch-content">
-                        <div id="monthly" class="w-100">
-                            <div class="pricing-plan shadow position-relative w-100">
-                                <div class="pricing-plan-header">
-                                    <h2 class="pricing-plan__titel">Monatlich</h2>
-                                </div>
-                                <div class="pricing-plan__description">
-                                    <div>
-                                        <p class="d-flex flex-row justify-content-center mb-4 fs-3">
-                                            <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
-                                        </p>
-                                        <span>
-                                            Monatliche Kosten, bei Monatlicher Vorauszahlung
-                                        </span>
-                                    </div>
-
-                                    <div class="employee-input-container mt-4">
-                                        <div class="d-flex justify-content-center flex-row px-5">
-                                            <button
-                                                class="preise_decrease-button primary-dark-button-style py-2 px-4">-</button>
-                                            <input min="1" max="10" type="text"
-                                                class="employee-input w-auto py-2 px-4 rounded-3" name="employee-input"
-                                                value="1" />
-                                            <button
-                                                class="preise_increase-button primary-dark-button-style py-2 px-4">+</button>
-                                        </div>
-                                        <div class="range-wrap mt-2">
-                                            <label for="employee-input"
-                                                class="form-label text-center fs-5">Mitarbeiter</label>
-                                        </div>
-                                    </div>
-
-                                    <a class="primary-dark-button-style mt-5 w-100"
-                                        href="https://app.calendall.net/public/quick-signup" target="_blank">Kaufen</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="yearly" class="w-100" style="display:none">
-                            <div class="pricing-plan shadow position-relative w-100">
-                                <span class="position-absolute badge bg-danger badge_custom">
-                                    20%
-                                </span>
-                                <div class="pricing-plan-header">
-                                    <h2 class="pricing-plan__titel">Jährlich</h2>
-                                </div>
-                                <div class="pricing-plan__description">
-                                    <div>
-                                        <p class="d-flex flex-row justify-content-center mb-4 fs-3">
-                                            <span id="yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
-                                        </p>
-                                        <span>
-                                            Monatliche Kosten, bei Jährlicher Vorauszahlung
-                                        </span>
-                                    </div>
-
-                                    <div class="employee-input-container mt-4">
-                                        <div class="d-flex justify-content-center flex-row px-5">
-                                            <button
-                                                class="preise_decrease-button primary-dark-button-style py-2 px-4">-</button>
-                                            <input min="1" max="10" type="text"
-                                                class="employee-input w-auto py-2 px-4 rounded-3" name="employee-input"
-                                                value="1" />
-                                            <button
-                                                class="preise_increase-button primary-dark-button-style py-2 px-4">+</button>
-                                        </div>
-                                        <div class="range-wrap mt-2">
-                                            <label for="employee-input"
-                                                class="form-label text-center fs-5">Mitarbeiter</label>
-                                        </div>
-                                    </div>
-
-                                    <a class="primary-dark-button-style mt-5 w-100"
-                                        href="https://app.calendall.net/public/quick-signup" target="_blank">Kaufen</a>
-                                </div>
-                            </div>
-                        </div>
+        <!----------------------------- Terminerinnerungen ----------------------------->
+        <section id="terminerinnerungen" class="container-fluid position-relative absolute-height" data-aos="fade-up">
+            <div class="container h-100">
+                <div class="row h-100 d-flex align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="mb-4">
+                            <strong>Terminerinnerungen</strong>
+                        </h4>
+                        <p class="fs-5">
+                            Verabschiede dich von vergessenen Terminen durch <strong class="primary-dark-color">SMS- und E-Mail-Erinnerungen</strong>. 💬
+                        </p>
+                        <p class="fs-5">
+                            Wir erinnern dich auch an die <strong class="primary-dark-color">Geburtstage</strong> deiner Kunden. 🎂
+                        </p>
                     </div>
                 </div>
-                <!-- SWITCH-Container END -->
+            </div>
+            <img class="h-100 end-0 top-0" src="/images/2-kundenmanagement-new.png" />
+        </section>
 
-                <div class="col-12">
-                    <p class="mt-5 fs-4">Alle Preise zzgl. gesetzlicher MwSt. </p>
+
+        <!----------------------------- Verfügbarkeit ----------------------------->
+        <section id="Verfügbarkeit" class="container-fluid position-relative absolute-height" data-aos="fade-up">
+            <img class="h-100 start-0 top-0" src="/images/3-verfuegbarkeit-new.png" /> 
+            <div class="container h-100">
+                <div class="row h-100 d-flex align-items-center">
+                    <div class="offset-lg-6 col-lg-6 text-center">
+                        <h4 class="mb-4">
+                            <strong>Jederzeit auf jedem Gerät verfügbar</strong>
+                        </h4>
+                        <p class="fs-5">
+                            Unsere Webanwendung ermöglicht dir, deine Termine <strong class="primary-dark-color">von überall aus und jedem Gerät</strong>einzusehen und zu verwalten, sei es im Salon oder unterwegs. 💻🖥️📱
+                        </p>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <!----------------------------- Optionale Onlinebuchung ----------------------------->
+        <section id="onlinebuchung" class="container-fluid position-relative absolute-height" data-aos="fade-up">
+            <div class="container h-100">
+                <div class="row h-100 d-flex align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="mb-4">
+                            <strong>Optionale Onlinebuchung</strong>
+                            <p>(kein Aufpreis)</p>
+                        </h4>
+                        <p class="fs-5">
+                            Sie können optional <strong class="primary-dark-color">einzeln ausgewählte Dienstleistungen</strong>über einen Link <strong class="primary-dark-color">online</strong> oder direkt für Stammkunden zur Verfügung stellen, um Telefonzeit zu sparen. 📲
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="h-100 end-0 top-0" src="/images/2-kundenmanagement-new.png" />
+        </section>
+
+        <!----------------------------- Testimonial ----------------------------->
+
+        <section id="referenzen" class="container-fluid mb-5 pb-5 justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex justify-content-center h-auto">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    IMAGE
+                                                    <p class="name mt-3 mb-0">
+                                                        <p class="">Hediye Cabar</p>
+                                                        <strong class="ps-5">Das Studio Hairlich Team </strong>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-6 text-center">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide d-flex justify-content-center h-auto">
+                                <div class="testimonial shadow my-5 mx-2 text-center">
+                                    <div class="testimonial-content">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p class="fs-5">
+                                            Wir sind sehr erfreut von der Effizienz, die Calendall in meinem Nagelstudio
+                                            gebracht hat! Es ist sehr leicht zu bedienen und das Verwalten meiner Buchungen
+                                            und Aufgaben ist jetzt viel einfacher und übersichtlicher. Ich kann Calendall
+                                            jedem Nagelstudio nur weiterempfehlen, das seine Prozesse optimieren möchte.</p>
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </div>
+                                    <div class="hline mx-auto"></div>
+                                    <p class="name mt-3 mb-0">
+                                        <strong class="fs-5"><em>Enrike Meininger</em></strong>
+                                    </p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
