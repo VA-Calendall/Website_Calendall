@@ -1205,7 +1205,25 @@ input[type=range]::-ms-thumb {
 //Specialbox
 .special-box {
     position: relative;
-    // padding: 50px 100px 50px 70px;
+    padding: 3rem 2rem 3rem 7rem;
+        @media (max-width: 1199px) {
+            padding: 1rem 2rem 1rem 4.5rem;
+        }
+        @media (max-width: 1080px) {
+            padding: 3rem 3rem 3rem 9rem;
+        }
+        @media (max-width: 768px) {
+            padding: 3rem 2.5rem 3rem 9rem;
+        }
+        @media (max-width: 500px) {
+            padding: 3rem 2.5rem 3rem 8rem;
+        }
+        @media (max-width: 414px) {
+            padding: 3rem 2.5rem 3rem 7rem;
+        }
+        @media (max-width: 375px) {
+            padding: 3rem 2.5rem 3rem 6rem;
+        }
     &:after {
         content:'';
         background-image: url(../images/box-bg-primary.png);
@@ -1218,5 +1236,39 @@ input[type=range]::-ms-thumb {
         height:100%;
         width:100%;
         z-index: -1;
+    }
+}
+
+.checklist-item {
+    @extend .fs-5;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+        &:first-child {
+            margin-top:30px;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 5px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:before {
+        content: '';
+        background-image: url(../images/check-bullets.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        display: inline-flex;
+        flex-shrink: 0;
+        margin-right: 10px;
+        @media (max-width: 768px) {
+            height: 20px;
+            width: 20px;
+        }
     }
 }
