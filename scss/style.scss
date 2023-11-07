@@ -1186,17 +1186,29 @@ input[type=range]::-ms-thumb {
     }
 }
 
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+@include media-breakpoint-up(md) {
+    .py-md-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .py-lg-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+}
 //Media
 .absolute-height {
-    height: 35rem;
-    width: auto;
-    @media (max-width: 1199px) {
-        height: 25rem;
-    }
-
     img {
         position: absolute;
         @media (max-width: 991px) {
+            height: auto !important;
+            width: 65vw;
             position: inherit;
         }
     }
