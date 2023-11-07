@@ -927,55 +927,38 @@ input[type=range]::-ms-thumb {
     .testimonial {
         border-radius: 20px;
         width: 100%;
-        padding: 50px;
+        padding: 20px 0 50px 0;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
 
-        @media (max-width: 767px) {
-            padding: 30px;
-        }
+        // @media (max-width: 767px) {
+        //     padding: 30px;
+        // }
 
-        @media (max-width: 575px) {
-            padding: 20px;
-        }
+        // @media (max-width: 575px) {
+        //     padding: 20px;
+        // }
 
         .testimonial-content {
             display: flex;
             flex-direction: column;
-            padding: 0 10%;
+            padding: 0 0;
             position: relative;
 
-            .fa {
-                position: absolute;
-                font-size: 70px;
-                top: 50%;
-                transform: translateY(-50%);
-                color: var(--primary-color);
-
-                @media (max-width: 1199px) {
-                    font-size: 50px;
+            img {
+                @media (max-width: 991px) {
+                    display:flex;
+                    margin: 0 auto;;
+                    width:60%;
+                    margin-bottom: 15px;
                 }
-
-                @media (max-width: 575px) {
-                    font-size: 30px;
+                @media (max-width: 768px) {
+                    width:80%;
                 }
-
-                &.fa-angle-double-left {
-                    right: 15px;
-
-                    @media (max-width: 767px) {
-                        right: 0;
-                    }
-                }
-
-                &.fa-angle-double-right {
-                    left: 15px;
-
-                    @media (max-width: 767px) {
-                        left: 0;
-                    }
+                @media (max-width: 500px) {
+                    width:100%;
                 }
             }
         }
@@ -983,16 +966,17 @@ input[type=range]::-ms-thumb {
 
     &.swiper-horizontal {
         .swiper-pagination {
-            bottom: 0;
-
+            bottom: 15px;
             .swiper-pagination-bullet {
-                height: 10px;
-                width: 10px;
-                background: var(--primary-hover-color);
-                opacity: .8;
+                height: 20px;
+                width: 20px;
+                background: transparent;
+                border:2px solid $black;
+                border-radius: 50%;
+                opacity: 1;
 
                 &.swiper-pagination-bullet-active {
-                    background: var(--primary-color);
+                    background: rgba($black, .4);
                 }
             }
         }
@@ -1211,5 +1195,24 @@ input[type=range]::-ms-thumb {
             width: 65vw;
             position: inherit;
         }
+    }
+}
+
+//Specialbox
+.special-box {
+    position: relative;
+    // padding: 50px 100px 50px 70px;
+    &:after {
+        content:'';
+        background-image: url(../images/box-bg-primary.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height:100%;
+        width:100%;
+        z-index: -1;
     }
 }
