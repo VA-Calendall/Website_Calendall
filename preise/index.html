@@ -25,25 +25,25 @@
             <div class="col-12 switch-container">
                 <!-- SWITCH START -->
                 <div class="switch-field d-flex justify-content-center mb-5">
-                    <input type="radio" id="switch_left" name="switch_2" value="yes" checked />
+                    <input type="radio" id="switch_left" name="switch_2" value="no" />
                     <label for="switch_left">Monatlich</label>
-                    <input type="radio" id="switch_right" name="switch_2" value="no" />
+                    <input type="radio" id="switch_right" name="switch_2" value="yes" checked/>
                     <label for="switch_right">Jährlich</label>
                 </div>
                 <!-- SWITCH END -->
                 <div class="col-md-5 col-12 d-flex justify-content-center mx-auto switch-content">
-                    <div id="monthly" class="w-100">
+                    <div id="yearly" class="w-100">
                         <div class="pricing-plan shadow position-relative w-100">
                             <div class="pricing-plan-header">
-                                <h2 class="pricing-plan__titel">Monatlich</h2>
+                                <h2 class="pricing-plan__titel">Jährlich</h2>
                             </div>
                             <div class="pricing-plan__description">
                                 <div>
                                     <p class="d-flex flex-row justify-content-center mb-4 fs-3">
-                                        <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
+                                        <span id="yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                                     </p>
                                     <span>
-                                        Monatliche Kosten, bei Monatlicher Vorauszahlung
+                                        Monatliche Kosten, bei Jährlicher Vorauszahlung
                                     </span>
                                 </div>
 
@@ -62,9 +62,10 @@
                                             class="form-label text-center fs-5">Mitarbeiter</label>
                                     </div>
                                 </div>
-                                <a href="https://app.calendall.net/public/quick-signup" class="bg-tertiary-color px-5 my-4 pt-2 pb-2 rounded-5 fs-4 hover-color-black d-inline-block"><span>jetzt kostenlos testen!</span></a>
-                                <p class="text-start fs-4 mb-2">
-                                    <i class="fa fa-check fw-thin primary-color me-2"></i>
+
+                                <a href="https://app.calendall.net/public/quick-signup" class="bg-tertiary-color bg-tertiary-color-hover px-5 pt-2 pb-2 rounded-5 fs-4 hover-color-black text-dark d-inline-block"><span>jetzt kostenlos testen!</span></a>
+                                <p class="text-start fs-4 mb-2 mt-4">
+                                    <i class="fa fa-check fw-thin primary-color mt-2"></i>
                                     Online-Kalender
                                 </p>
                                 <p class="text-start fs-4 mb-2">
@@ -106,18 +107,18 @@
                             </div>
                         </div>
                     </div>
-                    <div id="yearly" class="w-100" style="display:none">
+                    <div id="monthly" class="w-100" style="display:none">
                         <div class="pricing-plan shadow position-relative w-100">
                             <div class="pricing-plan-header">
-                                <h2 class="pricing-plan__titel">Jährlich</h2>
+                                <h2 class="pricing-plan__titel">Monatlich</h2>
                             </div>
                             <div class="pricing-plan__description">
                                 <div>
                                     <p class="d-flex flex-row justify-content-center mb-4 fs-3">
-                                        <span id="yearly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
+                                        <span id="monthly-payment-price-per-month" class="ps-4 fs-3">0.00</span>€
                                     </p>
                                     <span>
-                                        Monatliche Kosten, bei Jährlicher Vorauszahlung
+                                        Monatliche Kosten, bei Monatlicher Vorauszahlung
                                     </span>
                                 </div>
 
@@ -136,10 +137,9 @@
                                             class="form-label text-center fs-5">Mitarbeiter</label>
                                     </div>
                                 </div>
-
-                                <a href="https://app.calendall.net/public/quick-signup" class="bg-secondary-color px-5 my-4 pt-2 pb-2 rounded-5 fs-4 hover-color-black d-inline-block"><span>jetzt kostenlos testen!</span></a>
-                                <p class="text-start fs-4 mb-2">
-                                    <i class="fa fa-check fw-thin primary-color me-2"></i>
+                                <a href="https://app.calendall.net/public/quick-signup" class="bg-tertiary-color bg-tertiary-color-hover px-5 pt-2 pb-2 rounded-5 fs-4 hover-color-black text-dark d-inline-block"><span>jetzt kostenlos testen!</span></a>
+                                <p class="text-start fs-4 mb-2 mt-4">
+                                    <i class="fa fa-check fw-thin primary-color mt-2"></i>
                                     Online-Kalender
                                 </p>
                                 <p class="text-start fs-4 mb-2">
