@@ -667,6 +667,14 @@ h6 {
     color: var(--white-color);
 }
 
+.bg-tertiary-color-hover {
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-color: var(--tertiary-dark-hover);
+    }
+}
+
+
 
 
 /* .container-4{
@@ -1059,8 +1067,24 @@ input[type=range]::-ms-thumb {
 }
 
 .hover-color-black {
+    transition: all .2s ease-in-out;
     &:hover {
         color: black;
+    }
+}
+
+.hover-color-white {
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $white-color;
+    }
+}
+
+
+.hover-color-primary-dark {
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $primary-dark-color;
     }
 }
 
@@ -1189,10 +1213,36 @@ input[type=range]::-ms-thumb {
         padding-bottom: 6rem !important;
     }
 }
+
+@include media-breakpoint-up(lg) {
+    .py-lg-15 {
+        padding-top: 15rem !important;
+        padding-bottom: 15rem !important;
+    }
+}
+
+.d-big-none {
+    @media (min-width: 1920px) {
+        display:none !important;
+    }
+}
+.d-big-flex {
+    @media (min-width: 1920px) {
+        display:flex !important;
+    }
+}
+.offset-big-0 {
+    @media (min-width: 1920px) {
+        margin-left: 0;
+    }
+}
+
 //Media
 .absolute-height {
-    img {
+    & > img {
         position: absolute;
+        height: 100%;
+        width:auto;
         @media (max-width: 991px) {
             height: auto !important;
             width: 65vw;

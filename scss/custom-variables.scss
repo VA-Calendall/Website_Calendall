@@ -1,30 +1,32 @@
 $primary-color: #95AA98;
 $primary-hover-color: #95AA98;
 $primary-hover-text-color: #{darken(#68866c, 17%)};
-$secondary-color: #7F6F6D;
-$secondary-hover-color: #7F6F6D;
-$secondary-hover-text-color: #{darken(#7F6F6D, 17%)};
+$secondary-color: #8D8787;
+$secondary-hover-color: #8D8787;
+$secondary-hover-text-color: #{darken(#8D8787, 17%)};
 $primary-dark-color: #68866C;
 $primary-dark-hover-color: #68866C;
 $primary-dark-hover-text-color: #{darken(#68866c, 17%)};
 $white-color: #ffffff;
 $bs-navbar-nav-link-padding-x: 12px;
 $tertiary-color: #FFBD59;
+$tertiary-dark-hover: #{darken(#FFBD59, 17%)};
 
 
 :root {
     --primary-color: #95AA98;
     --primary-hover-color: #95AA98;
     --primary-hover-text-color: #{darken(#68866c, 17%)};
-    --secondary-color: #7F6F6D;
-    --secondary-hover-color: #7F6F6D;
-    --secondary-hover-text-color: #{darken(#7F6F6D, 17%)};
+    --secondary-color: #8D8787;
+    --secondary-hover-color: #8D8787;
+    --secondary-hover-text-color: #{darken(#8D8787, 17%)};
     --primary-dark-color: #68866c;
     --primary-dark-hover-color: #68866c;
     --primary-dark-hover-text-color: #{darken(#68866c, 17%)};
     --white-color: #ffffff;
     --bs-navbar-nav-link-padding-x: 12px;
     --tertiary-color: #FFBD59;
+    --tertiary-dark-hover: #{darken(#FFBD59, 17%)};
 }
 
 
