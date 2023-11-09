@@ -796,6 +796,7 @@ input[type=range]::-ms-thumb {
     line-height: 1.5;
     color: #555555;
     // margin: 15px;
+    background-color: #efefef;
 }
 
 .pricing-plan:hover {
@@ -803,9 +804,7 @@ input[type=range]::-ms-thumb {
 }
 
 .pricing-plan-header {
-    padding: 35px;
-    background: var(--primary-dark-color);
-    color: var(--white-color);
+    padding: 35px 35px 10px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -813,7 +812,7 @@ input[type=range]::-ms-thumb {
     margin: 0;
     text-align: center;
     /* font-size: 1.5em; */
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .pricing-plan__summary {

@@ -30,6 +30,7 @@ export default defineConfig({
                 nagelstudio: resolve(__dirname, "nagelstudio/index.html"),
                 massagestudio: resolve(__dirname, "massagestudio/index.html"),
                 Fußpflegepraxis: resolve(__dirname, "fusspflege/index.html"),
+                preise: resolve(__dirname, "fusspflege/preise.html"),
             },
         },
     },
