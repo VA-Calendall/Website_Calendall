@@ -225,10 +225,17 @@ h6 {
 }
 
 /*---------- Navigation Bar ----------*/
+// .scrolled  {
+//     .navigation {
+//         top:0;
+//     }
+// }
+
 .navigation {
     width: 100%;
     z-index: 100;
     transition: all 0.5s;
+    top:0;
 
     nav {
         width: 100%;
@@ -1343,3 +1350,89 @@ input[type=range]::-ms-thumb {
         }
     }
 }
+
+//* Special BG *//
+
+// .scrolled {
+//     #fixed-banner {
+//         transform: translateY(-100%);
+//     }
+// }
+
+#fixed-banner {
+    .content-wrap {
+        @media (max-width: 489px) {
+            flex-direction: column;
+        }
+    }
+    .fs-1 {
+        @media (max-width: 489px) {
+            font-size: calc(2.5rem + 0.3vw) !important;
+        }
+    }
+    .fs-4 {
+        @media (max-width: 489px) {
+            font-size: calc(1.3rem + 0.3vw) !important;
+        }
+    }
+    .fs-6 {
+        @media (max-width: 489px) {
+            font-size: calc(1.2rem + 0.3vw) !important;
+        }
+    }
+}
+
+.bg-image-special {
+    position: relative;
+    &:before {
+        content:'';
+        background-image: url(../images/raketen-bg-left.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        z-index:-1;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left:0;
+        top:0;
+        @media (max-width: 1400px) {
+            background-size: cover;
+            background-image: url(../images/raketen-bg-whole.png);
+            width:100%;
+        }
+        @media (max-width: 489px) {
+            opacity: 0.5;
+        }
+    }
+    &:after {
+        content:'';
+        background-image: url(../images/raketen-bg-right.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index:-1;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right:0;
+        top:0;
+        @media (max-width: 1400px) {
+            content: none;
+        }
+    }
+}
+
+.text-shadow-strong {
+    text-shadow: 1px 1px 2px black;       
+}
+
+.text-shadow-light {
+    text-shadow: 1px 5px 10px #383838;       
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+
