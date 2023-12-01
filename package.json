@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "build": "vite build && cp CNAME dist/",
     "preview": "vite preview",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "generate:webp-images": "find . -type f | egrep '.jpeg|.jpg|.tiff|.tif|.png' | parallel --progress 'cwebp -quiet -af {} -o {.}.webp'"
   },
   "devDependencies": {
     "@rollup/plugin-image": "^3.0.2",
