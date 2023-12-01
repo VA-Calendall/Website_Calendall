@@ -2,10 +2,12 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 import Sitemap from 'vite-plugin-sitemap'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 
 export default defineConfig({
     plugins: [
+        ViteImageOptimizer({}),
         Sitemap({
             hostname: "https://www.calendall.net"
         }),
