@@ -82,4 +82,10 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://www.calendall.net/quick-signup/</loc>
+        <lastmod>2023-12-22T08:24:00.571Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>

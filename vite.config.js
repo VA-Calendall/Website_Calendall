@@ -29,6 +29,7 @@ export default defineConfig({
                 "massagestudio/": resolve(__dirname, "massagestudio/index.html"),
                 "fusspflege/": resolve(__dirname, "fusspflege/index.html"),
                 "preise/": resolve(__dirname, "preise/index.html"),
+                "quick-signup/": resolve(__dirname, "quick-signup/index.html"),
             },
         },
     },
