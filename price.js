@@ -153,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    document.getElementById('switch_left').addEventListener('click', switchContainer)
-    document.getElementById('switch_right').addEventListener('click', switchContainer)
+    document.getElementById('switch_left')?.addEventListener('click', switchContainer)
+    document.getElementById('switch_right')?.addEventListener('click', switchContainer)
 
      //END - On click Switch Function
 });
