@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData(quickSignUpForm);
 
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://jh7yib3aub.execute-api.eu-central-1.amazonaws.com/api/quick-signup", true);
+        xhr.open("POST", "https://jh7yib3aub.execute-api.eu-central-1.amazonaws.com/api/signup/tenants", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
         xhr.onreadystatechange = function () {
@@ -250,7 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const submitButton = quickSignUpForm.querySelector("[type=submit]")
                 submitButton.disabled = true
                 submitButton.classList.add("disabled")
-                quickSignUpForm.querySelector(".send-alert").classList.remove("d-none")
                 quickSignUpForm.querySelector(".send-spinner").classList.add("d-none");
                 quickSignUpSend = true;
 
@@ -270,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function () {
         xhr.send(
             JSON.stringify({
                 name: formData.get("businessNameInput"),
-                maxEmployees: formData.get("numberOfUserInput"),
+                maxEmployees: parseInt(formData.get("numberOfUserInput")),
                 testOrBuy: "buy",
                 duration: undefined,
                 notes: undefined,
