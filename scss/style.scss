@@ -191,7 +191,7 @@ h6 {
         }
     }
 
-    @media (max-width: 380) {
+    @media (max-width: 380px) {
         padding-top: 40px;
     }
 }
@@ -210,6 +210,14 @@ h6 {
 .empty-header {
     height: 150px;
 }
+
+.empty-header-sm {
+    height: 50px;
+    @media (max-width: 575px) {
+        height: 25px;
+    }
+}
+
 
 /*---------- Background Video ----------*/
 .background-video {
@@ -651,6 +659,25 @@ h6 {
     color: var(--primary-color);
 }
 
+.bg-special-primary-light-color {
+    background-color: var(--special-primary-light);
+}
+
+.bg-special-primary-color {
+    background-color: var(--special-primary-color);
+}
+
+.bg-special-primary-color-hover {
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-color: var(--special-primary-colo-dark);
+    }
+}
+
+.special-primary-color {
+    color: var(--special-primary-color);
+}
+
 .bg-primary-dark-color {
     background-color: var(--primary-dark-color);
     color: var(--white-color);
@@ -701,7 +728,7 @@ h6 {
 
 .special-link {
     text-decoration: underline;
-    color: #3D5896;
+    color: #395495;
     &:hover {
         color: $black;
     }
@@ -1067,7 +1094,7 @@ input[type=range]::-ms-thumb {
                     border: 2px solid $black;
                 }
                 &.swiper-pagination-bullet-active {
-                    background: rgba($black, .4);
+                    background: rgba($black, .7);
                 }
             }
         }
@@ -1594,7 +1621,7 @@ input[type=range]::-ms-thumb {
         .form-check-input {
             &[type="checkbox"] {
                 appearance: none;
-                background-color: #fff;
+                background-color: var(--special-primary-light);
                 margin: 0;
                 font: inherit;
                 color: $black;
@@ -1617,6 +1644,10 @@ input[type=range]::-ms-thumb {
                     box-shadow: inset 1em 1em $black;
                     transform-origin: bottom left;
                     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                    @media (max-width: 1080px) {
+                        width: 12px;
+                        height: 12px;
+                    }
                   }
             }
         }
@@ -1638,9 +1669,13 @@ input[type=range]::-ms-thumb {
                 transform: translateY(-50%);
                 top: 50%;
                 right: 10px;
-                height: 20px;
-                width: 30px;
+                height: 30px;
+                width: 35px;
                 z-index: 1;
+                @media (max-width: 1080px) {
+                    height: 20px;
+                    width: 25px;
+                }
             }
         }
         &.tel-icon {
@@ -1654,9 +1689,13 @@ input[type=range]::-ms-thumb {
                 transform: translateY(-50%);
                 top: 50%;
                 right: 10px;
-                height:20px;
-                width:30px;
+                height: 30px;
+                width: 35px;
                 z-index: 1;
+                @media (max-width: 1080px) {
+                    height: 20px;
+                    width: 25px;
+                }
             }
         }
         &.info-icon {
@@ -1670,9 +1709,13 @@ input[type=range]::-ms-thumb {
                 transform: translateY(-50%);
                 top: 50%;
                 right: 10px;
-                height:20px;
-                width:30px;
+                height: 30px;
+                width: 35px;
                 z-index: 1;
+                @media (max-width: 1080px) {
+                    height: 20px;
+                    width: 25px;
+                }
             }
         }
     } 

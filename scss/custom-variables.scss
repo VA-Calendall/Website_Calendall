@@ -12,6 +12,9 @@ $bs-navbar-nav-link-padding-x: 12px;
 $tertiary-color: #FFBD59;
 $tertiary-dark-hover: #{darken(#FFBD59, 17%)};
 $red-color: #FF0000;
+$special-primary-color: #3D8270;
+$special-primary-colo-dark:  #{darken(#3D8270, 17%)};
+$special-primary-light: #D8E6E2;
 
 
 :root {
@@ -29,6 +32,9 @@ $red-color: #FF0000;
     --tertiary-color: #FFBD59;
     --tertiary-dark-hover: #{darken(#FFBD59, 17%)};
     --red-color: #FF0000;
+    --special-primary-color: #3D8270;
+    --special-primary-colo-dark:  #{darken(#3D8270, 17%)};
+    --special-primary-light: #D8E6E2;
 }
 
 
